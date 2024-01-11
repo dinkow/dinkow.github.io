@@ -1,0 +1,25 @@
+Things for search results
+    Ian Maigler
+        about me
+
+    LinkedIn Profile
+
+    Online Resume
+
+    Education
+
+    Work Experience
+
+    Skills and Expertise
+
+    about my portfolio
+
+
+Things that need to change when the "web page" is changed
+    - top toolbar text
+    - back button
+    - front button
+    - address bar
+    - content box
+
+Mail links to email

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>IE5-like Website</title>
+</head>
+<body>
+    <div class="window fixed-border">
+        <!--TITLEBAR-->
+        <div class="title-bar">
+            <img src="./assets/images/IE5-logo.png" style="image-rendering: pixelated;">
+            <div id="title-bar-text" class="title-bar-text" style="margin-left: 4px; flex-grow: 1;"></div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Restore"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+
+        <!--TOOLBAR-->
+        <div style="margin: 1px 0px 3px 0px;">
+            <!--TOP TOOLBAR-->
+            <div style="display: flex; max-height: 28px;">
+                <fieldset class="menu-bar" style="border-bottom: none; border-right: none; padding: 0;">
+                    <div class="vertical-bar" style="margin: 2px 0 2px 2px;"></div>
+                    <button class="menu-bar-button menu-bar-item" style="margin-left: 4px;">File</button>
+                    <button class="menu-bar-button menu-bar-item">Edit</button>
+                    <button class="menu-bar-button menu-bar-item">View</button>
+                    <button class="menu-bar-button menu-bar-item">Favorites</button>
+                    <button class="menu-bar-button menu-bar-item">Tools</button>
+                    <button class="menu-bar-button menu-bar-item">Help</button>
+                </fieldset>
+                <fieldset style="padding: 0; border-bottom: none;">
+                    <img src="./assets/images/W98-logo.png" alt="windows 98 logo with black background" style="image-rendering: pixelated;">
+                </fieldset>
+            </div>
+
+            <!--MIDDLE TOOLBAR-->
+            <fieldset class="menu-bar" style="border-bottom: none;">
+                <div class="vertical-bar" style="height: 42px; margin: 2px 0px 2px 2px;"></div>
+
+                <!--back button-->
+                <button id="back-button" class="menu-bar-button middle-button gs" style="margin-left: 3px;">
+                    <div class="stack-content" style="margin: 0 12px 0 12px;">
+                        <img src="./assets/images/arrow-left.png" style="margin: 3px 0 6px 0;">
+                        <span>Back</span>
+                    </div>
+                    <hr class="vertical-hr" style="height: 44px; margin: 0;">
+                    <img src="./assets/images/arrow-extend.png" style="margin: 0 5px 0 3px;">
+                </button>
+
+                <!--forward button-->
+                <button id="forward-button" class="menu-bar-button middle-button gs">
+                    <div class="stack-content" style="margin: 0 5px 0 6px;">
+                        <img src="./assets/images/arrow-right.png" style="margin: 3px 0 6px 0;">
+                        <span>Forward</span>
+                    </div>
+                    <hr class="vertical-hr" style="height: 44px; margin: 0;">
+                    <img src="./assets/images/arrow-extend.png" style="margin: 0 5px 0 3px;">
+                </button>
+
+                <!--stop button-->
+                <button class="menu-bar-button middle-button middle-button-width stack-content gs">
+                    <img src="./assets/images/msg_error-2.png" style="margin-bottom: 3px;">
+                    <span>Stop</span>
+                </button>
+
+                <!--refresh button-->
+                <button class="menu-bar-button middle-button middle-button-width stack-content gs">
+                    <img src="./assets/images/refresh.png" style="margin-bottom: 3px;">
+                    <span>Refresh</span>
+                </button>
+
+                <!--home button-->
+                <button class="menu-bar-button middle-button middle-button-width stack-content gs">
+                    <img src="./assets/images/home.png" style="margin-bottom: 2px;">
+                    <span>Home</span>
+                </button>
+
+                <hr class="vertical-hr">
+
+                <!--search button-->
+                <button class="menu-bar-button middle-button middle-button-width stack-content gs">
+                    <img src="./assets/images/world.png" style="margin-bottom: 3px;">
+                    <span>Search</span>
+                </button>
+
+                <!--favorite button-->
+                <button class="menu-bar-button middle-button middle-button-width stack-content gs">
+                    <img src="./assets/images/favorites.png" style="margin: 2px 0 4px 0;">
+                    <span>Favorites</span>
+                </button>
+
+                <!--history button-->
+                <button class="menu-bar-button middle-button middle-button-width stack-content gs">
+                    <img src="./assets/images/history.png" style="margin: 1px 0 3px 0;">
+                    <span>History</span>
+                </button>
+
+                <hr class="vertical-hr">
+
+                <!--mail button-->
+                <button class="menu-bar-button middle-button middle-button-width stack-content gs">
+                    <div>
+                        <img src="./assets/images/mail.png" style="margin: 1px 0 3px 0;">
+                        <img src="./assets/images/arrow-extend.png" style="margin: 0 0 11px 2px;">
+                    </div>
+                    <span>Mail</span>
+                </button>
+
+                <!--print button-->
+                <button class="menu-bar-button middle-button middle-button-width stack-content gs">
+                    <img src="./assets/images/print.png" style="margin: 2px 0 4px 0;">
+                    <span>Print</span>
+                </button>
+
+
+            </fieldset>
+
+            <!--BOTTOM TOOLBAR-->
+            <div style="display: flex;">
+                <fieldset class="menu-bar" style="padding-top: 0; padding-bottom: 0;">
+                    <div class="vertical-bar" style="margin-left: 2px;"></div>
+                    <p class="menu-bar-text" style="padding-left: 4px;">Address</p>
+                    <div class="sunken-panel search-bar">
+                        <img src="./assets/images/IE5-logo.png" style="image-rendering: pixelated; margin: 0 5px 0 1px;">
+                        <p id="web-address" class="menu-bar-text" style="margin-top: 2px; flex-grow: 1;"></p>
+                        <img src="./assets/images/button-down.png" style="image-rendering: pixelated;">
+                    </div>
+                    <img src="./assets/images/go-button.png" alt="go button" style="image-rendering: pixelated; padding-right: 3px;">
+                    <p style="margin: 0; padding-right: 10px;">Go</p>
+                </fieldset>
+                <fieldset class="menu-bar" style="flex-grow: 0;">
+                    <div class="vertical-bar" style="margin-left: 2px;"></div>
+                    <p class="menu-bar-text" style="padding: 0 2px 0 4px;">Links</p>
+                    <button class="menu-bar-button" style="padding: 0; min-width: 12px; min-height: 24px;">
+                        <img class="link-arrows" src="./assets/images/link-arrows.png" alt="two small arrows that come after the word 'Links'">
+                    </button>
+                </fieldset>
+            </div>
+        </div>
+
+        <!--BROWSER CONTENT WINDOW-->
+        <div id="content-window" class="sunken-panel" style="overflow-y: scroll; height: calc(100% - 154px);">
+            <!--loaded dynamically-->
+        </div>
+
+        <!--STATUS BAR-->
+        <div class="status-bar">
+            <div class="status-bar-field" style="height: 16px;"></div>
+            <div class="status-bar-field-custom" style="width: 20px;"></div>
+            <div class="status-bar-field-custom" style="width: 20px;"></div>
+            <div class="status-bar-field-custom" style="width: 150px; align-items: center;">
+                <img src="./assets/images/world-1.png" style="margin-right: 6px; image-rendering: pixelated;">
+                Internet
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

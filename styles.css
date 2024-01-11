@@ -1,0 +1,217 @@
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+button:active,
+button:focus {
+    outline: none;
+}
+
+.fixed-border {
+    width: calc(100% - 6px);
+    height: calc(100% - 3px);
+    padding-bottom: 0;
+    position: fixed;
+}
+
+.menu-bar {
+    padding: 0;
+    display: flex; 
+    align-items: center;
+    flex-grow: 1;
+}
+
+.menu-bar-item {
+    min-width: 0;
+    min-height: 25px;
+    padding: 0 8.5px 0 8.5px;
+}
+
+.menu-bar-item::first-letter {
+    text-decoration: underline;
+}
+
+.menu-bar-text {
+    margin: 0;
+}
+
+.menu-bar-button:not(:active):not(:hover) {
+    box-shadow: none;
+}
+
+.menu-bar-button:not(:active):not(:hover) hr {
+    visibility: hidden;
+}
+
+.menu-bar-button:active hr {
+    border-left: 1px solid #fff;
+    border-right: 1px solid #808080;
+}
+
+.middle-button {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+    min-height: 0;
+    padding: 0;
+    height: 46px;
+}
+
+.middle-button img {
+    image-rendering: pixelated;
+}
+
+.middle-button-width {
+    width: 56px;
+}
+
+.bw:not(:hover) img {
+    filter: grayscale(100%) contrast(1000%);
+}
+
+.gs:not(:hover) img {
+    filter: grayscale(100%) saturate(0);
+}
+
+.stack-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.vertical-hr {
+    width: 0px;
+    height: 38px;
+    margin: 0;
+    border: 0;
+    border-left: 1px solid #808080;
+    border-right: 1px solid #fff;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.link-arrows {
+    image-rendering: pixelated;
+    padding: 2px 0 8px 0;
+}
+
+.W98-logo {
+    padding: 0;
+    border-bottom: none;
+}
+
+.W98-logo-img {
+    padding: 0;
+}
+
+.search-bar {
+    flex-grow: 1;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    margin: 0 10px 0 5px;
+}
+
+.status-bar-field-custom {
+    box-shadow: inset -1px -1px #dfdfdf, inset 1px 1px #808080;
+    display: flex;
+    padding: 2px 3px;
+    margin: 0;
+}
+
+.search-bar-text {
+    height: 17px;
+    margin: 0;
+    padding-left: 3px;
+    display: flex;
+    align-items: center;
+}
+
+.search-results {
+    padding: 0 10px 0 10px;
+}
+
+.result {
+    margin-bottom: 10px;
+}
+
+.result-text {
+    margin: 0;
+}
+
+.blockquote {
+    margin: 0 40px 0 40px;
+}
+
+/*ian-maigler.html*/
+.ian-maigler-body {
+    background-image: url('./assets/images/tile-stars.gif');
+    background-repeat: repeat;
+    background-size: 128px;
+}
+
+.profile-border {
+    border-style: groove;
+    border-width: 6px;
+    border-color: fuchsia;
+    margin: 10px;
+    background-color: rgb(255, 0, 255, 0.2);
+}
+
+.center-profile {
+    margin: auto;
+    width: 80%;
+}
+
+.profile-photo {
+    width: 128px;
+}
+
+.display-flex {
+    display: flex;
+}
+
+/*resume.html*/
+.display-vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.span-bullet span::before {
+    content: '\2022';
+    margin-right: 0.3em;
+}
+
+.margin-auto-children div {
+    margin: auto;
+}
+
+.horizontal-hr {
+    size: 1px;
+    color: #9a9a9a;
+}
+
+.job-company {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*work-experience.html*/
+.page-content {
+    width: 80%;
+    margin: 7% auto 7% auto;
+}
+
+
+
+.DEV-divs div {
+    background-color: rgb(255, 0, 0, 0.2);
+}
