@@ -210,6 +210,24 @@ button:focus {
     margin: 7% auto 7% auto;
 }
 
+.work-skills > div {
+    display: flex;
+    margin: 0 auto 0 auto;
+    align-items: center;
+}
+
+.work-skills h4 {
+    margin: 10px 0 10px 0;
+}
+
+.block-content {
+    width: 80%;
+}
+
+.side-bar {
+    width: 20%;
+}
+
 
 
 .DEV-divs div {
