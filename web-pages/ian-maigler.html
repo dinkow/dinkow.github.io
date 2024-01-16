@@ -1,25 +1,83 @@
 <div id="current-html" style="display: none;">./web-pages/ian-maigler.html</div>
 
 <div class="ian-maigler-body">
-    <div style="height: 20px; width: 100%; background-color: fuchsia;"></div>
+    <div class="profile-header">
+        <span>MyPlace.com | Home</span>
+        <div class="display-flex" style="align-items: center;">
+            <span>Search MyPlace:</span>
+            <div class="sunken-panel" style="height: 20px; width: 100px; margin: 0 3px 0 3px;"></div>
+            <button style="all: revert; font: inherit;">Go</button>
+        </div>
+        <span>Help | SignUp</span>
+    </div>
+    
+    <div class="top-nav">
+        <span>Home</span>
+        <hr>
+        <span>Browse</span>
+        <hr>
+        <span>Search</span>
+        <hr>
+        <span>Invite</span>
+        <hr>
+        <span>Film</span>
+        <hr>
+        <span>Mail</span>
+        <hr>
+        <span>Blog</span>
+        <hr>
+        <span>Favorites</span>
+        <hr>
+        <span>Forum</span>
+        <hr>
+        <span>Groups</span>
+        <hr>
+        <span>Events</span>
+        <hr>
+        <span>Videos</span>
+        <hr>
+        <span>Music</span>
+        <hr>
+        <span>Comedy</span>
+        <hr>
+        <span>Classifieds</span>
+    </div>
+
     <div class="center-profile">
-        <div class="profile-border">
+        <div class="profile-border display-flex">
             <img class="profile-photo" src="./assets/images/head-shot.jpg">
+            <div>
+                <h4>Ian Maigler</h4>
+                <span>Victoria BC</span>
+            </div>
+            <div style="margin-left: auto;">
+                <img id="cat-gif" src="../assets/images/cat-piano-paused.png" style="width: 100px;">
+                <audio id="audio" src="../assets/audio/All the mountains are high.mp3"></audio>
+                <button onclick="playMusic();" style="all: unset;">
+                    <img id="audio-controls" src="../assets/images/play-button.png" style="image-rendering: pixelated;">
+                </button>
+                <input type="range" id="volume-control" value="50" max="100">
+                <input type="range" id="scrubber" value="0" max="100">
+            </div>
         </div>
         <div class="display-flex">
             <div style="width: 30%;">
                 <div class="profile-border">
-                    <img src="./assets/images/cat-piano.gif" style="width: 100%;">
+                    <div class="display-flex">
+                        <img src="">
+                        <span></span>
+                    </div>
                 </div>
-                <div class="profile-border" style="height: 200px;">
-                    Wow! What a crazy profile!
+                <div class="profile-border">
+                    <h4></h4>
                 </div>
             </div>
             <div style="width: 70%;">
-                <div class="profile-border" style="height: 175px;">
-                    blah blah blah
+                <div class="profile-border">
+                    <h4>About Me!</h4>
+                    <span>My name is Ian. I grew up in Victoria BC.</span>
                 </div>
-                <div class="profile-border" style="height: 154px;">
+                <div class="profile-border">
                     
                 </div>
             </div>

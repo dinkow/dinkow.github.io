@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    loadPage('./web-pages/search-results.html', 'Microsoft Internet Explorer', false, false, 'http://www.google.com?hl=en');
+    loadPage('./web-pages/ian-maigler.html', 'Microsoft Internet Explorer', false, false, 'http://www.google.com?hl=en');
 });
 
 function loadNewHTML(href) {
@@ -53,4 +53,44 @@ function loadPage(html, barText, backButton, forwardButton, webAddressText) {
             var webAddress = document.getElementById('web-address');
             webAddress.textContent = webAddressText;
         })
+}
+
+function playMusic() {
+    var audio = document.getElementById('audio');
+    var audioControls = document.getElementById('audio-controls');
+    var catGif = document.getElementById('cat-gif');
+    var volumeControl = document.getElementById('volume-control');
+    var scrubber = document.getElementById('scrubber');
+
+    // play and pause
+    if (audio.paused) {
+        audio.play();
+        audioControls.src = "../assets/images/pause-button.png";
+        catGif.src = "../assets/images/cat-piano.gif";
+    } else {
+        audio.pause();
+        audioControls.src = "../assets/images/play-button.png";
+        catGif.src = "../assets/images/cat-piano-paused.png";
+    }
+
+    audio.addEventListener('ended', function () {
+        audioControls.src = "../assets/images/play-button.png";
+        catGif.src = "../assets/images/cat-piano-paused.png";
+    });
+
+    // volume control
+    volumeControl.addEventListener('input', function () {
+        audio.volume = volumeControl.value / 100;
+    });
+
+    // scrubber
+    audio.addEventListener('timeupdate', function () {
+        var progress = (audio.currentTime / audio.duration) * 100;
+        scrubber.value = progress;
+    });
+
+    scrubber.addEventListener('input', function () {
+        var seekTime = (scrubber.value / 100) * audio.duration;
+        audio.currentTime = seekTime;
+    })
 }
