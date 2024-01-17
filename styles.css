@@ -185,7 +185,26 @@ button:focus {
     border-width: 6px;
     border-color: fuchsia;
     margin: 10px;
-    background-color: rgb(255, 0, 255, 0.2);
+    background-color: rgb(255, 0, 255, 0.4);
+}
+
+.audio-controls-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=range] {
+    all: revert;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    all: revert;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    all: revert;
 }
 
 .center-profile {
@@ -194,7 +213,33 @@ button:focus {
 }
 
 .profile-photo {
-    width: 128px;
+    height: 145px;
+}
+
+.play-button {
+    flex-grow: 1;
+    margin-left: 4px;
+}
+
+.scrubber {
+    display: flex;
+    align-items: center;
+}
+
+#scrubber {
+    width: 100px;
+    float: right;
+    margin-right: 0;
+}
+
+#volume-control {
+    appearance: slider-vertical;
+    width: 20px;
+    height: 126px;
+}
+
+#audio-img {
+    image-rendering: pixelated;
 }
 
 .display-flex {

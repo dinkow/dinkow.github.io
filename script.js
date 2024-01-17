@@ -61,6 +61,9 @@ function playMusic() {
     var catGif = document.getElementById('cat-gif');
     var volumeControl = document.getElementById('volume-control');
     var scrubber = document.getElementById('scrubber');
+    var scrubberTime = document.getElementById('scrubber-time');
+
+    audio.volume = volumeControl.value / 100;
 
     // play and pause
     if (audio.paused) {
@@ -87,10 +90,22 @@ function playMusic() {
     audio.addEventListener('timeupdate', function () {
         var progress = (audio.currentTime / audio.duration) * 100;
         scrubber.value = progress;
+
+        // update timer
+        var currentTime = formatTime(audio.currentTime);
+        var duration = formatTime(audio.duration);
+        scrubberTime.textContent = currentTime + " / " + duration;
     });
 
     scrubber.addEventListener('input', function () {
         var seekTime = (scrubber.value / 100) * audio.duration;
         audio.currentTime = seekTime;
     })
+}
+
+function formatTime(time) {
+    var minutes = Math.floor(time / 60);
+    var seconds = Math.floor(time % 60);
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+    return minutes + ":" + seconds;
 }

@@ -44,27 +44,40 @@
     </div>
 
     <div class="center-profile">
-        <div class="profile-border display-flex">
-            <img class="profile-photo" src="./assets/images/head-shot.jpg">
-            <div>
-                <h4>Ian Maigler</h4>
-                <span>Victoria BC</span>
+        <div class="display-flex" style="justify-content: space-between;">
+            <div class="profile-border display-flex" style="flex-grow: 1;">
+                <img class="profile-photo" src="./assets/images/head-shot.jpg">
+                <div style="padding: 10px;">
+                    <h4>Ian Maigler</h4>
+                    
+                </div>
             </div>
-            <div style="margin-left: auto;">
-                <img id="cat-gif" src="../assets/images/cat-piano-paused.png" style="width: 100px;">
+
+            <!--audio box-->
+            <div class="profile-border display-flex">
                 <audio id="audio" src="../assets/audio/All the mountains are high.mp3"></audio>
-                <button onclick="playMusic();" style="all: unset;">
-                    <img id="audio-controls" src="../assets/images/play-button.png" style="image-rendering: pixelated;">
-                </button>
-                <input type="range" id="volume-control" value="50" max="100">
-                <input type="range" id="scrubber" value="0" max="100">
+                <div style="width: 170px;">
+                    <img id="cat-gif" src="../assets/images/cat-piano-paused.png" height="128px">
+                    <div class="scrubber">
+                        <div class="play-button">
+                            <button onclick="playMusic();" style="all: unset;">
+                                <img id="audio-controls" src="../assets/images/play-button.png" style="image-rendering: pixelated;">
+                            </button>
+                        </div>
+                        <span id="scrubber-time">0:00 / 0:00</span>
+                        <input type="range" id="scrubber" value="0" max="100">
+                    </div>
+                </div>
+                <div class="audio-controls-container">
+                    <input type="range" id="volume-control" value="10" max="100" style="flex-grow: 1;">
+                    <img id="audio-img" src="../assets/images/speaker-filled-audio-tool.png">
+                </div>
             </div>
         </div>
         <div class="display-flex">
             <div style="width: 30%;">
                 <div class="profile-border">
                     <div class="display-flex">
-                        <img src="">
                         <span></span>
                     </div>
                 </div>
@@ -73,9 +86,27 @@
                 </div>
             </div>
             <div style="width: 70%;">
-                <div class="profile-border">
+                <div class="profile-border" style="padding: 10px;">
                     <h4>About Me!</h4>
-                    <span>My name is Ian. I grew up in Victoria BC.</span>
+                    <p>
+                        My name is Ian Maigler. I am an aspiring Full-stack Developer 
+                        born and raised in Victoria BC. I graduated from Camosun College
+                        with an Information and Computer Systems Technology Diploma.
+                    </p>
+                    <p>
+                        My journey into programming was sparked by a deep-rooted love
+                        for problem-solving and technology. In elementary school I would
+                        acquire old broken computers to fix with the sole purpose to run minecraft
+                        servers for me and my friends to play on.
+                        <br>
+                        In middle school I taught myself 
+                        how to solve a rubik's cube, and now every time I see a new weird version of
+                        one I have to get it just to see how long it takes me to solve.
+                    </p>
+                    <p>
+                        In my free time you can find me playing games with friends, at the gym, 
+                        exploring different parts of Vancouver island, or using the oxford comma. 
+                    </p>
                 </div>
                 <div class="profile-border">
                     
