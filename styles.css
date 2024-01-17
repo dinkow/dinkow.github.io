@@ -242,6 +242,11 @@ input[type=range]::-webkit-slider-runnable-track {
     image-rendering: pixelated;
 }
 
+.contact-info {
+    display: flex;
+    flex-direction: column
+}
+
 .display-flex {
     display: flex;
 }
