@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'YahooFont';
+    src: url('./assets/fonts/Yahoo.ttf') format('truetype');
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -324,24 +329,98 @@ input[type=range]::-webkit-slider-runnable-track {
     margin: 7% auto 7% auto;
 }
 
-.work-skills > div {
-    display: flex;
-    margin: 0 auto 0 auto;
+.header-text {
     align-items: center;
+    display: flex;
+    font-family: 'YahooFont';
+    font-size: 2em;
+    text-shadow: 1px 1px rgb(54, 54, 54);
+}
+
+.work-header {
+    align-items: center;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    height: 20px;
+    padding-left: 5px;
+}
+
+.work-skills {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .work-skills h4 {
-    margin: 10px 0 10px 0;
+    margin: 5px;
+    color: rgb(255, 255, 16);
+    text-shadow: 2px 2px black;
+}
+
+.work-skill {
+    background-color: rgb(0, 51, 153);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+
+.work-skill > div {
+    align-items: center;
+    display: flex;
+}
+
+.work-skill img {
+    image-rendering: pixelated;
+    height: 32px;
+    width: 32px;
+    margin: 5px;
+}
+
+.work-skill p {
+    margin: 0;
+}
+
+.block-header {
+    align-items: center;
+    background-color: rgb(0, 51, 153);
+    color: #fff;
+    display: flex;
+    height: 20px;
+    padding-left: 5px;
+}
+
+.block-header h5 {
+    font-size: 1em;
 }
 
 .block-content {
+    background-color: rgb(255, 255, 204);
+    padding: 10px;
+}
+
+.work-experience-content {
     width: 80%;
 }
 
 .side-bar {
+    border: 1px rgb(0, 204, 0) solid;
+    margin-left:1px;
     width: 20%;
 }
 
+.side-bar-header {
+    align-items: center;
+    background-color: rgb(0, 204, 0);
+    color: #fff;
+    display: flex;
+    height: 20px;
+    padding-left: 5px;
+}
+
+.side-bar-header h4 {
+    font-size: 1em;
+}
 
 
 .DEV-divs div {
