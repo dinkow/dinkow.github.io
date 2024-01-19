@@ -50,6 +50,10 @@ button:focus {
     border-right: 1px solid #808080;
 }
 
+.menu-bar-button:active img {
+    transform: translateX(1px) translateY(1px);
+}
+
 .middle-button {
     display: flex;
     align-items: center;
@@ -216,9 +220,23 @@ input[type=range]::-webkit-slider-runnable-track {
     height: 145px;
 }
 
+.profile-description {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
 .play-button {
     flex-grow: 1;
     margin-left: 4px;
+}
+
+.play-button:hover {
+    cursor: pointer;
+}
+
+.play-button:active {
+    transform: translateY(1px);
 }
 
 .scrubber {
@@ -247,6 +265,21 @@ input[type=range]::-webkit-slider-runnable-track {
     flex-direction: column
 }
 
+.music-list-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.unstyled-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.music-list li {
+    margin-bottom: 5px;
+}
+
 .display-flex {
     display: flex;
 }
@@ -255,6 +288,10 @@ input[type=range]::-webkit-slider-runnable-track {
 .display-vertical {
     display: flex;
     flex-direction: column;
+}
+
+.span-bullet {
+    margin: 10px 0 10px 0;
 }
 
 .span-bullet span::before {
