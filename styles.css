@@ -1,6 +1,11 @@
 @font-face {
-    font-family: 'YahooFont';
+    font-family: 'Yahoo';
     src: url('./assets/fonts/Yahoo.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PixCon';
+    src: url('./assets/fonts/PixCon.ttf') format('truetype');
 }
 
 body {
@@ -137,6 +142,11 @@ button:focus {
     padding-left: 3px;
     display: flex;
     align-items: center;
+}
+
+.max-window-width {
+    margin: auto;
+    max-width: 840px;
 }
 
 .search-results {
@@ -332,7 +342,7 @@ input[type=range]::-webkit-slider-runnable-track {
 .header-text {
     align-items: center;
     display: flex;
-    font-family: 'YahooFont';
+    font-family: 'Yahoo';
     font-size: 2em;
     text-shadow: 1px 1px rgb(54, 54, 54);
     width: 80%;
@@ -445,32 +455,137 @@ input[type=range]::-webkit-slider-runnable-track {
 .education-background {
     display: flex;
     width: 100%;
-    height: 100%;
-    background-image: url('./assets/images/education/pattern-blue.jpg');
-    background-repeat: repeat;
-    background-size: 128px;
 }
 
 .quarter-left-div {
     display: flex;
     flex-direction: column;
-    width: 250px;
+    width: 40vw;
     height: 100%;
-    border-right: 2px groove white;
+    border-right: 5px solid;
+    border-image-source: url('./assets/images/education/custom-border-100px.jpg');
+    border-image-slice: 5;
+    image-rendering: pixelated;
 }
 
 .logo-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-image: url('./assets/images/education/pattern-purple.jpg');
     background-repeat: repeat;
     background-size: 128px;
     width: 100%;
-    height: 40%;
 }
 
 .checker-div {
     background-image: url('./assets/images/education/checker-pattern.jpg');
     background-repeat: repeat;
-    background-size: 128px;
+    background-size: 100px;
     width: 100%;
-    height: 60%;
+    height: 100vh;
+    border-top: 5px solid;
+    border-image-source: url('./assets/images/education/custom-border-100px.jpg');
+    border-image-slice: 5;
+    image-rendering: pixelated;
 }
+
+.content-header {
+    margin: 2px 4px 0 auto;
+}
+
+.diploma-results-text {
+    display: flex;
+    align-items: center;
+    font-family: 'PixCon';
+}
+
+.diploma-header {
+    color: blue;
+    font-size: 1.4vw;
+}
+
+.education-content {
+    background-image: url('./assets/images/education/pattern-blue.jpg');
+    background-repeat: repeat;
+    background-size: 128px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-padding {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 10% 5% 10%;
+}
+
+.education-border {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid;
+    border-image-source: url('./assets/images/education/custom-border-100px.jpg');
+    border-image-slice: 5;
+    image-rendering: pixelated;
+    background-color: rgb(255, 255, 255, 0.7);
+}
+
+.diploma-photo {
+    display: flex;
+    margin: 10px;
+    width: 65%;
+    position: relative;
+    box-shadow: 2px 2px 5px;
+}
+
+.sparkle-gif {
+    position: absolute;
+    transform: translate(-21%, -37%);
+    top: 0;
+    left: 0;
+    height: 50%;
+}
+
+.wow-sticker {
+    position: absolute;
+    transform: translate(30%, 30%);
+    bottom: 0;
+    right: 0;
+    height: 23%;
+}
+
+.listing-photos {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    margin: 10px 10px 10px 0;
+}
+
+.listing-photos img {
+    width: 100%;
+    box-shadow: 2px 2px 5px;
+}
+
+.diploma-description {
+    margin: 10px;
+}
+
+.campus-info {
+    display: flex;
+}
+
+.listing-stats {
+    display: flex;
+    flex-direction: column;
+}
+
+.money-symbol {
+    font-size: 2vw;
+    position: absolute;
+    transform: translate(-30%, -20%);;
+}
+
+.stat-header {
+    font-family: 'PixCon';
+    font-size: 1.5vw;
+}
+

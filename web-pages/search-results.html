@@ -1,228 +1,230 @@
 <div id="current-html" style="display: none;">./web-pages/search-results.html</div>
 
-<!--LOGO & SEARCH BAR-->
-<div style="display: flex; align-items: center; margin: 0 10px 0 10px;"> 
-    <img src="./assets/images/Google_1998_logo.png" alt="Google Beta logo" style="width: 25%;">
-    <div class="sunken-panel" style="flex-grow: 1;">
-        <p class="search-bar-text">www.google.com</p>
+<div style="max-width: 840px;">
+    <!--LOGO & SEARCH BAR-->
+    <div style="display: flex; align-items: center; margin: 0 10px 0 10px;"> 
+        <img src="./assets/images/Google_1998_logo.png" alt="Google Beta logo" style="width: 25%;">
+        <div class="sunken-panel" style="flex-grow: 1;">
+            <p class="search-bar-text">www.google.com</p>
+        </div>
+        <select>
+            <option>10 results</option>
+            <option>30 results</option>
+            <option>100 results</option>
+        </select>
+        <button style="margin: 5px;">Google Search</button>
+        <button style="margin-right: 5px;">I'm feeling lucky</button>
     </div>
-    <select>
-        <option>10 results</option>
-        <option>30 results</option>
-        <option>100 results</option>
-    </select>
-    <button style="margin: 5px;">Google Search</button>
-    <button style="margin-right: 5px;">I'm feeling lucky</button>
-</div>
-<hr class="horizontal-hr" style="margin: 0 10px 0 10px;">
-<p style="text-align: center; color: #6f6f6f;">Showing results <b>1 - 10</b> of approximately <b>234,000</b> for <b>google.</b> Search took <b>0.06</b> seconds.</p>
+    <hr class="horizontal-hr" style="margin: 0 10px 0 10px;">
+    <p style="text-align: center; color: #6f6f6f;">Showing results <b>1 - 10</b> of approximately <b>234,000</b> for <b>google.</b> Search took <b>0.06</b> seconds.</p>
 
-<!--SEARCH RESULTS-->
-<div class="search-results">
-    <!--Ian Maigler-->
-    <div class="result">
-        <a class="clickable-link" href="" onclick="loadPage('./web-pages/ian-maigler.html', 'Ian Maigler - Microsoft Internet Explorer', true, false, 'http:/\/www.ian-maigler.com'); return false;" style="font-size: 1.3em;">Ian Maigler</a>
-        <p class="result-text">
-            ...dedicated tech
-            <b>enthusiast</b>
-            equipped with a solid foundation...
-            <br>
-            ...keen eye for
-            <b>problem solving</b>
-            ...
-            <br>
-            <span class="result-text" style="color: #248000;">www.ian-maigler.com/ -&nbsp;</span>
-            <a href="" onclick="return false;">Cached: 2k</a>
-            <span style="color: #248000;">-&nbsp;</span>
-            <a href="" onclick="return false;">GoogleScout</a>
-        </p>
-    </div>
-    <div class="blockquote">
+    <!--SEARCH RESULTS-->
+    <div class="search-results">
+        <!--Ian Maigler-->
         <div class="result">
-            <a class="clickable-link" href="" onclick="return false;" style="font-size: 1.3em;">about</a>
+            <a class="clickable-link" href="" onclick="loadPage('./web-pages/ian-maigler.html', 'Ian Maigler - Microsoft Internet Explorer', true, false, 'http:/\/www.ian-maigler.com'); return false;" style="font-size: 1.3em;">Ian Maigler</a>
             <p class="result-text">
-                ...based in
-                <b>victoria</b>
-                bc...
+                ...dedicated tech
+                <b>enthusiast</b>
+                equipped with a solid foundation...
                 <br>
-                ...avid 
-                <b> PC </b>
-                gammer...
+                ...keen eye for
+                <b>problem solving</b>
+                ...
                 <br>
-                <span class="result-text" style="color: #248000;">www.ian-maigler.com/about -&nbsp;</span>
+                <span class="result-text" style="color: #248000;">www.ian-maigler.com/ -&nbsp;</span>
                 <a href="" onclick="return false;">Cached: 2k</a>
                 <span style="color: #248000;">-&nbsp;</span>
                 <a href="" onclick="return false;">GoogleScout</a>
             </p>
         </div>
-    </div>
+        <div class="blockquote">
+            <div class="result">
+                <a class="clickable-link" href="" onclick="return false;" style="font-size: 1.3em;">about</a>
+                <p class="result-text">
+                    ...based in
+                    <b>victoria</b>
+                    bc...
+                    <br>
+                    ...avid 
+                    <b> PC </b>
+                    gammer...
+                    <br>
+                    <span class="result-text" style="color: #248000;">www.ian-maigler.com/about -&nbsp;</span>
+                    <a href="" onclick="return false;">Cached: 2k</a>
+                    <span style="color: #248000;">-&nbsp;</span>
+                    <a href="" onclick="return false;">GoogleScout</a>
+                </p>
+            </div>
+        </div>
 
-    <!--LinkedIn-->
-    <div class="result">
-        <a class="clickable-link" href="https://www.linkedin.com/in/ian-maigler/?originalSubdomain=ca" target="_blank" style="font-size: 1.3em;">LinkedIn</a>
-        <p class="result-text">
-            ...a
-            <b>recent graduate</b>
-            in Information and Computer Systems...
-            <br>
-            ...an aspiring 
-            <b>Full Stack</b>
-            Developer...
-            <br>
-            <span class="result-text" style="color: #248000;">www.linkedin.com/in/ian-maigler -&nbsp;</span>
-            <a href="" onclick="return false;">Cached: 8k</a>
-            <span style="color: #248000;">-&nbsp;</span>
-            <a href="" onclick="return false;">GoogleScout</a>
-        </p>
-    </div>
-
-    <!--Resume-->
-    <div class="result">
-        <a class="clickable-link" href="" onclick="loadPage('./web-pages/resume.html', 'Resume - Microsoft Internet Explorer', true, false, 'http:/\/www.ian-maigler/resume.html'); return false;" style="font-size: 1.3em;">Resume</a>
-        <p class="result-text">
-            ...in Victoria BC.
-            <b>Full-Stack</b>
-            Development with...
-            <br>
-            ... implemented a dynamic, user-friendly website from scratch 
-            <b>scratch</b>
-            using...
-            <br>
-            <span class="result-text" style="color: #248000;">www.google.com/ian-maigler.com/resume.html -&nbsp;</span>
-            <a href="" onclick="return false;">Cached: 1k</a>
-            <span style="color: #248000;">-&nbsp;</span>
-            <a href="" onclick="return false;">GoogleScout</a>
-        </p>
-    </div>
-
-    <!--Work Experience-->
-    <div class="result">
-        <a class="clickable-link" href="" onclick="loadPage('./web-pages/work-experience.html', 'Work Experience - Microsoft Internet Explorer', true, false, 'http:/\/www.ian-maigler/work-experience.html'); return false;" style="font-size: 1.3em;">Work Experience</a>
-        <p class="result-text">
-            ...three month
-            <b>capstone</b>
-            project...
-            <br>
-            ...
-            <b>real</b>
-            work experience...
-            <br>
-            <span class="result-text" style="color: #248000;">www.ian-maigler.com/work-experience -&nbsp;</span>
-            <a href="" onclick="return false;">Cached: 2k</a>
-            <span style="color: #248000;">-&nbsp;</span>
-            <a href="" onclick="return false;">GoogleScout</a>
-        </p>
-    </div>
-
-    <!--Education-->
-    <div class="result">
-        <a class="clickable-link" href="" onclick="loadPage('./web-pages/education.html', 'Education - Microsoft Internet Explorer', true, false, 'http:/\/www.ian-maigler.com/education'); return false;" style="font-size: 1.3em;">Education</a>
-        <p class="result-text">
-            ...two years in the Camosun College
-            <b>ICS</b>
-            diploma program...
-            <br>
-            ...Dean's
-            <b>Honour Roll</b>
-            on two separate occasions...
-            <br>
-            <span class="result-text" style="color: #248000;">www.ian-maigler.com/education -&nbsp;</span>
-            <a href="" onclick="return false;">Cached: 2k</a>
-            <span style="color: #248000;">-&nbsp;</span>
-            <a href="" onclick="return false;">GoogleScout</a>
-        </p>
-    </div>
-    <div class="blockquote">
+        <!--LinkedIn-->
         <div class="result">
-            <a class="clickable-link" href="" onclick="return false;" style="font-size: 1.3em;">awards and achievements</a>
+            <a class="clickable-link" href="https://www.linkedin.com/in/ian-maigler/?originalSubdomain=ca" target="_blank" style="font-size: 1.3em;">LinkedIn</a>
             <p class="result-text">
-                ...Honour roll
-                <b>two</b>
-                semesters...
+                ...a
+                <b>recent graduate</b>
+                in Information and Computer Systems...
+                <br>
+                ...an aspiring 
+                <b>Full Stack</b>
+                Developer...
+                <br>
+                <span class="result-text" style="color: #248000;">www.linkedin.com/in/ian-maigler -&nbsp;</span>
+                <a href="" onclick="return false;">Cached: 8k</a>
+                <span style="color: #248000;">-&nbsp;</span>
+                <a href="" onclick="return false;">GoogleScout</a>
+            </p>
+        </div>
+
+        <!--Resume-->
+        <div class="result">
+            <a class="clickable-link" href="" onclick="loadPage('./web-pages/resume.html', 'Resume - Microsoft Internet Explorer', true, false, 'http:/\/www.ian-maigler/resume.html'); return false;" style="font-size: 1.3em;">Resume</a>
+            <p class="result-text">
+                ...in Victoria BC.
+                <b>Full-Stack</b>
+                Development with...
+                <br>
+                ... implemented a dynamic, user-friendly website from scratch 
+                <b>scratch</b>
+                using...
+                <br>
+                <span class="result-text" style="color: #248000;">www.google.com/ian-maigler.com/resume.html -&nbsp;</span>
+                <a href="" onclick="return false;">Cached: 1k</a>
+                <span style="color: #248000;">-&nbsp;</span>
+                <a href="" onclick="return false;">GoogleScout</a>
+            </p>
+        </div>
+
+        <!--Work Experience-->
+        <div class="result">
+            <a class="clickable-link" href="" onclick="loadPage('./web-pages/work-experience.html', 'Work Experience - Microsoft Internet Explorer', true, false, 'http:/\/www.ian-maigler/work-experience.html'); return false;" style="font-size: 1.3em;">Work Experience</a>
+            <p class="result-text">
+                ...three month
+                <b>capstone</b>
+                project...
                 <br>
                 ...
-                <b></b>
-                ...
+                <b>real</b>
+                work experience...
                 <br>
-                <span class="result-text" style="color: #248000;">www.ian-maigler.com/education/awards-and-achievements.html -&nbsp;</span>
+                <span class="result-text" style="color: #248000;">www.ian-maigler.com/work-experience -&nbsp;</span>
                 <a href="" onclick="return false;">Cached: 2k</a>
                 <span style="color: #248000;">-&nbsp;</span>
                 <a href="" onclick="return false;">GoogleScout</a>
             </p>
         </div>
+
+        <!--Education-->
         <div class="result">
-            <a class="clickable-link" href="" onclick="return false;" style="font-size: 1.3em;">diploma</a>
+            <a class="clickable-link" href="" onclick="loadPage('./web-pages/education.html', 'Education - Microsoft Internet Explorer', true, false, 'http:/\/www.ian-maigler.com/education'); return false;" style="font-size: 1.3em;">Education</a>
             <p class="result-text">
-                ...Information and
-                <b>Computer Systems</b>
-                Technologist...
+                ...two years in the Camosun College
+                <b>ICS</b>
+                diploma program...
                 <br>
-                ...
-                <b>two</b>
-                year diploma program...
+                ...Dean's
+                <b>Honour Roll</b>
+                on two separate occasions...
                 <br>
-                <span class="result-text" style="color: #248000;">www.ian-maigler.com/education/diploma.html -&nbsp;</span>
+                <span class="result-text" style="color: #248000;">www.ian-maigler.com/education -&nbsp;</span>
                 <a href="" onclick="return false;">Cached: 2k</a>
                 <span style="color: #248000;">-&nbsp;</span>
                 <a href="" onclick="return false;">GoogleScout</a>
             </p>
         </div>
-    </div>
+        <div class="blockquote">
+            <div class="result">
+                <a class="clickable-link" href="" onclick="return false;" style="font-size: 1.3em;">awards and achievements</a>
+                <p class="result-text">
+                    ...Honour roll
+                    <b>two</b>
+                    semesters...
+                    <br>
+                    ...
+                    <b></b>
+                    ...
+                    <br>
+                    <span class="result-text" style="color: #248000;">www.ian-maigler.com/education/awards-and-achievements.html -&nbsp;</span>
+                    <a href="" onclick="return false;">Cached: 2k</a>
+                    <span style="color: #248000;">-&nbsp;</span>
+                    <a href="" onclick="return false;">GoogleScout</a>
+                </p>
+            </div>
+            <div class="result">
+                <a class="clickable-link" href="" onclick="return false;" style="font-size: 1.3em;">diploma</a>
+                <p class="result-text">
+                    ...Information and
+                    <b>Computer Systems</b>
+                    Technologist...
+                    <br>
+                    ...
+                    <b>two</b>
+                    year diploma program...
+                    <br>
+                    <span class="result-text" style="color: #248000;">www.ian-maigler.com/education/diploma.html -&nbsp;</span>
+                    <a href="" onclick="return false;">Cached: 2k</a>
+                    <span style="color: #248000;">-&nbsp;</span>
+                    <a href="" onclick="return false;">GoogleScout</a>
+                </p>
+            </div>
+        </div>
 
-    <!--Skills and Expertise-->
-    <div class="result">
-        <a class="clickable-link" href="" onclick="loadPage('./web-pages/skills-and-expertise.html', 'Skills and Expertise - Microsoft Internet Explorer', true, false, 'http:/\/www.ian-maigler.com/skills-and-expertise.html'); return false;" style="font-size: 1.3em;">Skills and Expertise</a>
-        <p class="result-text">
-            ...experience with
-            <b>several</b>
-            programming languages...
-            <br>
-            ...eager and
-            <b>quick</b>
-            learner...
-            <br>
-            <span class="result-text" style="color: #248000;">www.ian-maigler.com/education.html -&nbsp;</span>
-            <a href="" onclick="return false;">Cached: 2k</a>
-            <span style="color: #248000;">-&nbsp;</span>
-            <a href="" onclick="return false;">GoogleScout</a>
-        </p>
-    </div>
+        <!--Skills and Expertise-->
+        <div class="result">
+            <a class="clickable-link" href="" onclick="loadPage('./web-pages/skills-and-expertise.html', 'Skills and Expertise - Microsoft Internet Explorer', true, false, 'http:/\/www.ian-maigler.com/skills-and-expertise.html'); return false;" style="font-size: 1.3em;">Skills and Expertise</a>
+            <p class="result-text">
+                ...experience with
+                <b>several</b>
+                programming languages...
+                <br>
+                ...eager and
+                <b>quick</b>
+                learner...
+                <br>
+                <span class="result-text" style="color: #248000;">www.ian-maigler.com/education.html -&nbsp;</span>
+                <a href="" onclick="return false;">Cached: 2k</a>
+                <span style="color: #248000;">-&nbsp;</span>
+                <a href="" onclick="return false;">GoogleScout</a>
+            </p>
+        </div>
 
-    <!--Interests and Hobbies-->
-    <div class="result">
-        <a class="clickable-link" href="" onclick="loadPage('./web-pages/interests-and-hobbies.html', 'Interests and Hobbies - Microsoft Internet Explorer', true, false, 'http:/\/www.ian-maigler.com/interests-and-hobbies.html'); return false;" style="font-size: 1.3em;">Interests and Hobbies</a>
-        <p class="result-text">
-            ...crippling
-            <b>Magic the Gathering</b>
-            addiction...
-            <br>
-            ...
-            <b>DIY</b>
-            projects...
-            <br>
-            <span class="result-text" style="color: #248000;">www.ian-maigler.com/interests-and-hobbies.html -&nbsp;</span>
-            <a href="" onclick="return false;">Cached: 2k</a>
-            <span style="color: #248000;">-&nbsp;</span>
-            <a href="" onclick="return false;">GoogleScout</a>
-        </p>
-    </div>
+        <!--Interests and Hobbies-->
+        <div class="result">
+            <a class="clickable-link" href="" onclick="loadPage('./web-pages/interests-and-hobbies.html', 'Interests and Hobbies - Microsoft Internet Explorer', true, false, 'http:/\/www.ian-maigler.com/interests-and-hobbies.html'); return false;" style="font-size: 1.3em;">Interests and Hobbies</a>
+            <p class="result-text">
+                ...crippling
+                <b>Magic the Gathering</b>
+                addiction...
+                <br>
+                ...
+                <b>DIY</b>
+                projects...
+                <br>
+                <span class="result-text" style="color: #248000;">www.ian-maigler.com/interests-and-hobbies.html -&nbsp;</span>
+                <a href="" onclick="return false;">Cached: 2k</a>
+                <span style="color: #248000;">-&nbsp;</span>
+                <a href="" onclick="return false;">GoogleScout</a>
+            </p>
+        </div>
 
-    <!--about my portfolio-->
-    <div class="result">
-        <a class="clickable-link" href="" onclick="loadPage('./web-pages/about-portfolio.html', 'Portfolio - Microsoft Internet Explorer', true, false, 'http:/\/www.ian-maigler.com/portfolio.html'); return false;" style="font-size: 1.3em;">About my Portfolio</a>
-        <p class="result-text">
-            ...process of emulating a 
-            <b>IE5</b>
-            browsing experience...
-            <br>
-            ...thought
-            <b>process</b>
-            while working...
-            <br>
-            <span class="result-text" style="color: #248000;">www.ian-maigler.com/portfolio.html -&nbsp;</span>
-            <a href="" onclick="return false;">Cached: 2k</a>
-            <span style="color: #248000;">-&nbsp;</span>
-            <a href="" onclick="return false;">GoogleScout</a>
-        </p>
+        <!--about my portfolio-->
+        <div class="result">
+            <a class="clickable-link" href="" onclick="loadPage('./web-pages/about-portfolio.html', 'Portfolio - Microsoft Internet Explorer', true, false, 'http:/\/www.ian-maigler.com/portfolio.html'); return false;" style="font-size: 1.3em;">About my Portfolio</a>
+            <p class="result-text">
+                ...process of emulating a 
+                <b>IE5</b>
+                browsing experience...
+                <br>
+                ...thought
+                <b>process</b>
+                while working...
+                <br>
+                <span class="result-text" style="color: #248000;">www.ian-maigler.com/portfolio.html -&nbsp;</span>
+                <a href="" onclick="return false;">Cached: 2k</a>
+                <span style="color: #248000;">-&nbsp;</span>
+                <a href="" onclick="return false;">GoogleScout</a>
+            </p>
+        </div>
     </div>
 </div>
