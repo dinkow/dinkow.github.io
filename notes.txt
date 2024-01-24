@@ -7,3 +7,21 @@ Things that need to change when the "web page" is changed
 
 Mail links to email
 on the "skills" page actually display/demonstrate the skills
+    - a list of programming languages i know each written in their respective programming languages
+    - Front-end: html, javascript, maybe React, Angular
+    - Back-end:  Node.js, express django
+    - showcase responsive design
+    - Database Management (sql, mongo)
+    - version control (git and github)
+    - server Management (aws, azure)
+    - docker
+    - APIs RESTful
+    - Testing
+    - Web Security
+    - Authentication and Authorization
+    - Collaborative experience (trello, slack)
+    - problem solving (show 2x2 = 4 with code expansion with ridiculously overcomplicated way of achieving the answer)
+    - regex with just a link to a website that does regex
+    - soft skills (communicating, teamwork, adaptability)
+
+    - streamlining workflow (custom keyboard)
