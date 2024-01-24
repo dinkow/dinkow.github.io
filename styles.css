@@ -654,8 +654,7 @@ input[type=range]::-webkit-slider-runnable-track {
     display: flex;
     align-items: center;
     background-color: #1e1e1e;
-    box-shadow: 0 0 8px black;
-    color: rgb(161, 161, 161);
+    color: #a1a1a1;
     padding: 2px 12px;
 }
 
@@ -665,5 +664,49 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 .code-body {
+    display: flex;
     background-color: #1e1e1e;
+}
+
+.line-numbers {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    color: #a1a1a1;
+}
+
+.line-numbers > span {
+    padding: 2px 2px 0 10px;
+}
+
+.code-body-text {
+    display: flex;
+    flex-direction: column;
+    color: #a1a1a1;
+    flex-grow: 1;
+    letter-spacing: 3px;
+}
+
+.code-body-text > span {
+    padding: 1px 0 0 10px;
+}
+
+.tag {
+    color: #4a9cd6;
+    letter-spacing: normal;
+}
+
+.attribute {
+    color: #9cdcff;
+    letter-spacing: normal;
+}
+
+.white-txt {
+    color: white;
+    letter-spacing: normal;
+}
+
+.argument {
+    color: #ce9178;
+    letter-spacing: normal;
 }
