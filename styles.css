@@ -596,11 +596,82 @@ input[type=range]::-webkit-slider-runnable-track {
 
 /* skills-and-expertise.html */
 .programming-languages {
+    display: flex;
+}
+
+.file-explorer {
+    color: #bebebe;
+    background-color: #252526;
+}
+
+.file-explorer-head {
+    padding: 10px 15px;
+}
+
+.explorer-head-text {
+    font-size: 9px;
+    flex-grow: 1;
+}
+
+.triple-dot {
+    
+}
+
+.explore-header {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.open-editors {
 
 }
 
-.vs-code {
+.buffer {
+    padding: 2px 0;
+}
 
+.vertical-greater-than {
+    font-family: 'Quicksand';
+    font-weight: bold;
+    display: inline-block;
+    transform: rotate(90deg);
+    margin: 0 1px;
+}
+
+.open-files {
+    margin-left: 30px;
+}
+
+.file-name {
+
+}
+
+.workspace-files div {
+    
+}
+
+.expanded-folder {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+    grid-template-columns: auto auto;
+}
+
+.expanded-folder div {
+    margin: 2px 0;
+}
+
+.expanded-folder img {
+    display: block;
+    height: 10px;
+    margin: 0 auto;
+}
+
+.fi { /*file indent*/
+    padding-left: 10px;
+}
+
+.vs-code {
+    flex-grow: 1;
 }
 
 .vs-tabs {
@@ -654,7 +725,7 @@ input[type=range]::-webkit-slider-runnable-track {
     display: flex;
     align-items: center;
     background-color: #1e1e1e;
-    color: #a1a1a1;
+    color: #bebebe;
     padding: 2px 12px;
 }
 
