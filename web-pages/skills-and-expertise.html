@@ -16,12 +16,16 @@
                         <span class="explore-header">OPEN EDITORS</span>
                     </div>
                     <div class="open-files">
-                        <div class="buffer">
+                        <div id="current-file-icon">
                             <span class="angle-bracket"><></span>
+                        </div>
+                        <div id="current-file">
                             <span class="tab-text">hello-world.html</span>
                         </div>
-                        <div class="buffer">
+                        <div>
                             <span class="tab-pound" style="margin-right: 2px;"><i>#</i></span>
+                        </div>
+                        <div>
                             <span class="tab-text" style="margin-right: 1px;">styles.css</span>
                         </div>
                     </div>
@@ -41,61 +45,61 @@
                             <div>
                                 <img src="../assets/images/skills-and-expertise/js.png" style="height: 8px; margin-top: 1px;">
                             </div>
-                            <div>
+                            <div class="file-name" onclick="loadCode('../assets/vs-code-files/javascript.html')">
                                 <span class="tab-text">JavaScript.js</span>
                             </div>
                             <div>
                                 <img src="../assets/images/skills-and-expertise/py.png">
                             </div>
-                            <div>
+                            <div class="file-name" onclick="loadCode('../assets/vs-code-files/python.html')">
                                 <span class="tab-text">Python.py</span>
                             </div>
                             <div>
                                 <img src="../assets/images/skills-and-expertise/java.png">
                             </div>
-                            <div>
+                            <div class="file-name" onclick="loadCode('../assets/vs-code-files/java.html')">
                                 <span class="tab-text">Java.java</span>
                             </div>
                             <div>
                                 <img src="../assets/images/skills-and-expertise/cs.png" style="height: 9px;">
                             </div>
-                            <div>
+                            <div class="file-name" onclick="loadCode('../assets/vs-code-files/c-sharp.html')">
                                 <span class="tab-text">C#.cs</span>
                             </div>
                             <div>
                                 <img src="../assets/images/skills-and-expertise/cpp.png"  style="height: 9px;">
                             </div>
-                            <div>
+                            <div class="file-name" onclick="loadCode('../assets/vs-code-files/cpp.html')">
                                 <span class="tab-text">C and C++.cpp</span>
                             </div>
                             <div>
                                 <img src="../assets/images/skills-and-expertise/sql.png"  style="height: 9px;">
                             </div>
-                            <div>
+                            <div class="file-name" onclick="loadCode('../assets/vs-code-files/sql.html')">
                                 <span class="tab-text">SQL.sql</span>
                             </div>
                             <div>
                                 <img src="../assets/images/skills-and-expertise/html.png" style="height: 8px; margin-top: 1px;">
                             </div>
-                            <div>
+                            <div class="file-name" onclick="loadCode('../assets/vs-code-files/html.html')">
                                 <span class="tab-text">HTML.html</span>
                             </div>
                             <div>
                                 <img src="../assets/images/skills-and-expertise/css.png" style="height: 8px; margin-top: 1px;">
                             </div>
-                            <div>
+                            <div class="file-name" onclick="loadCode('../assets/vs-code-files/css.html')">
                                 <span class="tab-text" style="margin-left: 4px;">CSS.css</span>
                             </div>
                             <div>
                                 <img src="../assets/images/skills-and-expertise/swift.png">
                             </div>
-                            <div>
+                            <div class="file-name" onclick="loadCode('../assets/vs-code-files/swift.html')">
                                 <span class="tab-text">Swift.swift</span>
                             </div>
                             <div>
                                 <img src="../assets/images/skills-and-expertise/bash.png">
                             </div>
-                            <div>
+                            <div class="file-name" onclick="loadCode('../assets/vs-code-files/bash.html')">
                                 <span class="tab-text">Bash.sh</span>
                             </div>
                         </div>
@@ -135,9 +139,15 @@
                         <span>9</span>
                         <span>10</span>
                         <span>11</span>
+                        <span>12</span>
+                        <span>13</span>
+                        <span>14</span>
+                        <span>15</span>
+                        <span>16</span>
+                        <span>17</span>
                     </div>
 
-                    <div class="code-body-text">
+                    <div id="code" class="code-body-text">
                         <span>&lt;!<span class="tag">DOCTYPE</span> <span class="attribute">htm</span><span class="attribute" style="letter-spacing: 3px;">l</span>&gt;</span>
                         <span>&lt;<span class="tag">html</span> <span class="attribute">lang</span><span class="white-txt">=</span><span class="argument">"en</span><span class="argument" style="letter-spacing: 3px;">"</span>&gt;</span>
                         <span>&lt;<span class="tag">hea</span><span class="tag" style="letter-spacing: 3px;">d</span>&gt;</span>

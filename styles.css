@@ -605,7 +605,9 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 .file-explorer-head {
-    padding: 10px 15px;
+    display: flex;
+    position: relative;
+    padding: 10px 10px;
 }
 
 .explorer-head-text {
@@ -614,7 +616,10 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 .triple-dot {
-    
+    display: block;
+    position: absolute;
+    bottom: 13px;
+    right: 8px;
 }
 
 .explore-header {
@@ -639,11 +644,10 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 .open-files {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 16px auto;
     margin-left: 30px;
-}
-
-.file-name {
-
 }
 
 .workspace-files div {
@@ -653,11 +657,12 @@ input[type=range]::-webkit-slider-runnable-track {
 .expanded-folder {
     display: grid;
     grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
-    grid-template-columns: auto auto;
+    grid-template-columns: 16px auto;
+    margin-left: 17px;
 }
 
 .expanded-folder div {
-    margin: 2px 0;
+    padding: 2px 0;
 }
 
 .expanded-folder img {
@@ -671,6 +676,8 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 .vs-code {
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;
 }
 
@@ -686,7 +693,7 @@ input[type=range]::-webkit-slider-runnable-track {
     display: flex;
     align-items: center;
     background-color: #1e1e1e;
-    color: #d6c07f;
+    color: #bebebe;
     padding: 8px;
 }
 
@@ -732,11 +739,13 @@ input[type=range]::-webkit-slider-runnable-track {
 .greater-than {
     font-family: 'Quicksand';
     font-weight: bold;
+    flex: 1;
 }
 
 .code-body {
     display: flex;
     background-color: #1e1e1e;
+    flex-grow: 1;
 }
 
 .line-numbers {
@@ -760,6 +769,11 @@ input[type=range]::-webkit-slider-runnable-track {
 
 .code-body-text > span {
     padding: 1px 0 0 10px;
+    height: 13px;
+}
+
+.file-name:hover {
+    background-color: rgb(42, 45, 46);
 }
 
 .tag {
@@ -779,5 +793,45 @@ input[type=range]::-webkit-slider-runnable-track {
 
 .argument {
     color: #ce9178;
+    letter-spacing: normal;
+}
+
+.comment {
+    color: #6a9955;
+    letter-spacing: normal;
+}
+
+.function {
+    color: #dcdc9d;
+    letter-spacing: normal;
+}
+
+.class {
+    color: #d7ba7d;
+    letter-spacing: normal;
+}
+
+.bracket {
+    color: #ffd70e;
+    letter-spacing: normal;
+}
+
+.value {
+    color: #b5ce89;
+    letter-spacing: normal;
+}
+
+.pink {
+    color: #da70cb;
+    letter-spacing: normal;
+}
+
+.turquoise {
+    color: #32bbb0;
+    letter-spacing: normal;
+}
+
+.blue {
+    color: #1c7cff;
     letter-spacing: normal;
 }

@@ -109,3 +109,14 @@ function formatTime(time) {
     seconds = seconds < 10 ? "0" + seconds : seconds;
     return minutes + ":" + seconds;
 }
+
+function loadCode(href) {
+    return fetch(href)
+        .then(response => response.text())
+        .then(html => {
+            // Update the content window with the new HTML
+            var codeBody = document.querySelector('#code');
+            codeBody.innerHTML = html;
+        })
+        .catch(error => console.error('Error fetching HTML:', error));
+}
