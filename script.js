@@ -110,13 +110,36 @@ function formatTime(time) {
     return minutes + ":" + seconds;
 }
 
-function loadCode(href) {
+function loadCode(href, iconFile, file) {
     return fetch(href)
         .then(response => response.text())
         .then(html => {
-            // Update the content window with the new HTML
             var codeBody = document.querySelector('#code');
             codeBody.innerHTML = html;
+
+            var codeIcon = document.querySelectorAll('#current-file-icon');
+            codeIcon.forEach(icon => {
+                icon.src = '../assets/images/skills-and-expertise/' + iconFile;
+            });
+
+            var codeFile = document.querySelectorAll('#current-file');
+            codeFile.forEach(text => {
+                text.innerText = file;
+            });            
         })
         .catch(error => console.error('Error fetching HTML:', error));
+}
+
+function pingWebsite() {
+    const startTime = new Date().getTime();
+
+    fetch('http://localhost:8080')
+        .then(response => {
+            const endTime = new Date().getTime();
+            const pingTime = endTime - startTime;
+            document.getElementById('ping-time').innerText = pingTime;
+        })
+        .catch(error => {
+            console.error('Error pinging Website: ', error);
+        });
 }

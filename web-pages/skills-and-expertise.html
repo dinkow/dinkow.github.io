@@ -1,168 +1,396 @@
 <div id="current-html" style="display: none;">./web-pages/skills-and-expertise.html</div>
 
-<div class="max-window-width">
-    <div class="center-profile">
+<div style="background-color: #333333;">
+    <div class="max-window-width">
+        <div class="center-profile">
 
-        <div class="programming-languages">
-            <div class="file-explorer">
-                <div class="file-explorer-head">
-                    <span class="explorer-head-text">EXPLORER</span>
-                    <span class="triple-dot">...</span>
-                </div>
-
-                <div class="open-editors">
-                    <div>
-                        <span class="vertical-greater-than">></span>
-                        <span class="explore-header">OPEN EDITORS</span>
+            <!-- start of vc code -->
+            <div class="programming-languages">
+                <div class="file-explorer">
+                    <div class="file-explorer-head">
+                        <span class="explorer-head-text">EXPLORER</span>
+                        <span class="triple-dot">...</span>
                     </div>
-                    <div class="open-files">
-                        <div id="current-file-icon">
-                            <span class="angle-bracket"><></span>
-                        </div>
-                        <div id="current-file">
-                            <span class="tab-text">hello-world.html</span>
-                        </div>
-                        <div>
-                            <span class="tab-pound" style="margin-right: 2px;"><i>#</i></span>
-                        </div>
-                        <div>
-                            <span class="tab-text" style="margin-right: 1px;">styles.css</span>
-                        </div>
-                    </div>
-                </div>
 
-                <hr style="width: 100%; height: 1px; background-color: #474747; border: none;">
-
-                <div class="open-editors">
-                    <span class="vertical-greater-than">></span>
-                    <span class="explore-header">PROJECT</span>
-                    <div class="workspace-files">
-                        <div class="fi">
+                    <div class="open-editors">
+                        <div>
                             <span class="vertical-greater-than">></span>
-                            <span>src</span>
+                            <span class="explore-header">OPEN EDITORS</span>
                         </div>
-                        <div class="expanded-folder">
-                            <div>
-                                <img src="../assets/images/skills-and-expertise/js.png" style="height: 8px; margin-top: 1px;">
-                            </div>
-                            <div class="file-name" onclick="loadCode('../assets/vs-code-files/javascript.html')">
-                                <span class="tab-text">JavaScript.js</span>
+                        <div class="open-files">
+                            <div style="display: flex; justify-content: center;">
+                                <img id="current-file-icon" src="../assets/images/skills-and-expertise/notes.png" style="height: 9px; margin-top: 1px;">
                             </div>
                             <div>
-                                <img src="../assets/images/skills-and-expertise/py.png">
+                                <span id="current-file" class="tab-text">notes.txt</span>
                             </div>
-                            <div class="file-name" onclick="loadCode('../assets/vs-code-files/python.html')">
-                                <span class="tab-text">Python.py</span>
-                            </div>
-                            <div>
-                                <img src="../assets/images/skills-and-expertise/java.png">
-                            </div>
-                            <div class="file-name" onclick="loadCode('../assets/vs-code-files/java.html')">
-                                <span class="tab-text">Java.java</span>
-                            </div>
-                            <div>
-                                <img src="../assets/images/skills-and-expertise/cs.png" style="height: 9px;">
-                            </div>
-                            <div class="file-name" onclick="loadCode('../assets/vs-code-files/c-sharp.html')">
-                                <span class="tab-text">C#.cs</span>
-                            </div>
-                            <div>
-                                <img src="../assets/images/skills-and-expertise/cpp.png"  style="height: 9px;">
-                            </div>
-                            <div class="file-name" onclick="loadCode('../assets/vs-code-files/cpp.html')">
-                                <span class="tab-text">C and C++.cpp</span>
-                            </div>
-                            <div>
-                                <img src="../assets/images/skills-and-expertise/sql.png"  style="height: 9px;">
-                            </div>
-                            <div class="file-name" onclick="loadCode('../assets/vs-code-files/sql.html')">
-                                <span class="tab-text">SQL.sql</span>
-                            </div>
-                            <div>
-                                <img src="../assets/images/skills-and-expertise/html.png" style="height: 8px; margin-top: 1px;">
-                            </div>
-                            <div class="file-name" onclick="loadCode('../assets/vs-code-files/html.html')">
-                                <span class="tab-text">HTML.html</span>
-                            </div>
-                            <div>
+                            <div style="display: flex; justify-content: center;">
                                 <img src="../assets/images/skills-and-expertise/css.png" style="height: 8px; margin-top: 1px;">
                             </div>
-                            <div class="file-name" onclick="loadCode('../assets/vs-code-files/css.html')">
-                                <span class="tab-text" style="margin-left: 4px;">CSS.css</span>
-                            </div>
                             <div>
-                                <img src="../assets/images/skills-and-expertise/swift.png">
+                                <span class="tab-text" style="margin-right: 1px; cursor: initial;">styles.css</span>
                             </div>
-                            <div class="file-name" onclick="loadCode('../assets/vs-code-files/swift.html')">
-                                <span class="tab-text">Swift.swift</span>
+                        </div>
+                    </div>
+
+                    <hr style="width: 100%; height: 1px; background-color: #474747; border: none;">
+
+                    <div class="open-editors">
+                        <span class="vertical-greater-than">></span>
+                        <span class="explore-header">PROJECT</span>
+                        <div class="workspace-files">
+                            <div class="fi">
+                                <span class="vertical-greater-than">></span>
+                                <span>src</span>
                             </div>
-                            <div>
-                                <img src="../assets/images/skills-and-expertise/bash.png">
-                            </div>
-                            <div class="file-name" onclick="loadCode('../assets/vs-code-files/bash.html')">
-                                <span class="tab-text">Bash.sh</span>
+                            <div class="expanded-folder">
+                                <div>
+                                    <img src="../assets/images/skills-and-expertise/js.png" style="height: 8px; margin-top: 1px;">
+                                </div>
+                                <div class="file-name" onclick="loadCode('../assets/vs-code-files/javascript.html', 'js.png', 'JavaScript.js')">
+                                    <span class="tab-text">JavaScript.js</span>
+                                </div>
+                                <div>
+                                    <img src="../assets/images/skills-and-expertise/py.png">
+                                </div>
+                                <div class="file-name" onclick="loadCode('../assets/vs-code-files/python.html', 'py.png', 'Python.py')">
+                                    <span class="tab-text">Python.py</span>
+                                </div>
+                                <div>
+                                    <img src="../assets/images/skills-and-expertise/java.png">
+                                </div>
+                                <div class="file-name" onclick="loadCode('../assets/vs-code-files/java.html', 'java.png', 'Java.java')">
+                                    <span class="tab-text">Java.java</span>
+                                </div>
+                                <div>
+                                    <img src="../assets/images/skills-and-expertise/cs.png" style="height: 9px;">
+                                </div>
+                                <div class="file-name" onclick="loadCode('../assets/vs-code-files/c-sharp.html', 'cs.png', 'C#.cs')">
+                                    <span class="tab-text">C#.cs</span>
+                                </div>
+                                <div>
+                                    <img src="../assets/images/skills-and-expertise/cpp.png"  style="height: 9px;">
+                                </div>
+                                <div class="file-name" onclick="loadCode('../assets/vs-code-files/cpp.html', 'cpp.png', 'C and C++.cpp')">
+                                    <span class="tab-text">C and C++.cpp</span>
+                                </div>
+                                <div>
+                                    <img src="../assets/images/skills-and-expertise/sql.png"  style="height: 9px;">
+                                </div>
+                                <div class="file-name" onclick="loadCode('../assets/vs-code-files/sql.html', 'sql.png', 'SQL.sql')">
+                                    <span class="tab-text">SQL.sql</span>
+                                </div>
+                                <div>
+                                    <img src="../assets/images/skills-and-expertise/html.png" style="height: 8px; margin-top: 1px;">
+                                </div>
+                                <div class="file-name" onclick="loadCode('../assets/vs-code-files/html.html', 'html.png', 'HTML.html')">
+                                    <span class="tab-text">HTML.html</span>
+                                </div>
+                                <div>
+                                    <img src="../assets/images/skills-and-expertise/css.png" style="height: 8px; margin-top: 1px;">
+                                </div>
+                                <div class="file-name" onclick="loadCode('../assets/vs-code-files/css.html', 'css.png', 'CSS.css')">
+                                    <span class="tab-text" style="margin-left: 4px;">CSS.css</span>
+                                </div>
+                                <div>
+                                    <img src="../assets/images/skills-and-expertise/swift.png">
+                                </div>
+                                <div class="file-name" onclick="loadCode('../assets/vs-code-files/swift.html', 'swift.png', 'Swift.swift')">
+                                    <span class="tab-text">Swift.swift</span>
+                                </div>
+                                <div>
+                                    <img src="../assets/images/skills-and-expertise/bash.png">
+                                </div>
+                                <div class="file-name" onclick="loadCode('../assets/vs-code-files/bash.html' , 'bash.png', 'Bash.sh')">
+                                    <span class="tab-text">Bash.sh</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                
+                <div class="vs-code">
+                    <div class="vs-tabs">
+                        <div class="primary-tab">
+                            <img id="current-file-icon" src="../assets/images/skills-and-expertise/notes.png" style="height: 9px; margin-right: 5px;">
+                            <span id="current-file" class="tab-text">notes.txt</span>
+                            <span class="primary-tab-x">✖</span>
+                        </div>
+                        <div class="secondary-tab">
+                            <span class="tab-pound"><i>#</i></span>
+                            <span class="tab-text">styles.css</span>
+                            <span class="primary-tab-x" style="z-index: -1;">✖</span>
+                        </div>
+                        <div class="empty-tab"></div>
+                    </div>
+
+                    <div class="code-file-path">
+                        <span>src <span class="greater-than">></span> <span id="current-file"></span>notes.txt</span>
+                    </div>
+
+                    <div class="code-body">
+                        <div class="line-numbers">
+                            <span style="margin-right: 1px;">1</span>
+                            <span>2</span>
+                            <span>3</span>
+                            <span>4</span>
+                            <span>5</span>
+                            <span>6</span>
+                            <span>7</span>
+                            <span>8</span>
+                            <span>9</span>
+                            <span>10</span>
+                            <span>11</span>
+                            <span>12</span>
+                            <span>13</span>
+                            <span>14</span>
+                            <span>15</span>
+                            <span>16</span>
+                            <span>17</span>
+                        </div>
+
+                        <div id="code" class="code-body-text">
+                            <span class="white-txt">click on the file names!</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!-- end of vs code -->
+
+            <!-- start of backend -->
+            <div class="window backend-example">
+                <div class="backend-text">
+                    <h4>Backend</h4>
+                    <p>I have lots of experience with backend</p>
+                    <button onclick="pingWebsite()">Ping Website</button>
+                    <span><span id="ping-time">-</span> milliseconds</span>
+                </div>
+                <div class="sunken-panel backend-code">
+                    <div class="code-body-text" style="color: rgb(90, 90, 90); background-color: #f9f8f8; padding: 10px;">
+                        <span class="display-flex">
+                            <span class="tag">function</span>
+                            &nbsp;
+                            <span class="argument">pingWebsite</span>
+                            <span class="blue">( )</span>
+                            &nbsp;
+                            <span class="blue">{</span>
+                        </span>
+                        
+                        <span class="display-flex">
+                            &emsp;&emsp;
+                            <span class="tag">const</span>
+                            &nbsp;
+                            <span class="turquoise">startTime</span>
+                            &nbsp;
+                            <span style="letter-spacing: normal;">=</span>
+                            &nbsp;
+                            <span class="tag">new</span>
+                            &nbsp;
+                            <span class="turquoise">Date</span>
+                            <span class="comment">( )</span>
+                            <span style="letter-spacing: normal;">.</span>
+                            <span class="argument">getTime</span>
+                            <span class="comment">( )</span>
+                            <span>;</span>
+                        </span>
+
+                        <span>&nbsp;</span>
+
+                        <span class="display-flex">
+                            &emsp;&emsp;
+                            <span class="argument">fetch</span>
+                            <span class="comment">
+                                (
+                                    <span class="pink">'https://www.ianmaigler.com'</span>
+                                )
+                            </span>
+                        </span>
+
+                        <span class="display-flex">
+                            &emsp;&emsp;&emsp;&emsp;
+                            <span style="letter-spacing: normal;">.</span>
+                            <span class="argument">then</span>
+                            <span class="comment">(</span>
+                            <span class="attribute">response</span>
+                            &nbsp;
+                            <span class="tag">=></span>
+                            &nbsp;
+                            <span class="argument">{</span>
+                        </span>
+
+                        <span class="display-flex">
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            <span class="tag">const</span>
+                            &nbsp;
+                            <span class="turquoise">endTime</span>
+                            &nbsp;
+                            <span style="letter-spacing: normal;">=</span>
+                            &nbsp;
+                            <span class="tag">new</span>
+                            &nbsp;
+                            <span class="turquoise">Date</span>
+                            <span class="tag">( )</span>
+                            <span style="letter-spacing: normal;">.</span>
+                            <span class="argument">getTime</span>
+                            <span class="tag">( )</span>
+                            <span style="letter-spacing: normal;">;</span>
+                        </span>
+
+                        <span class="display-flex">
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            <span class="tag">const</span>
+                            &nbsp;
+                            <span class="turquoise">pingTime</span>
+                            &nbsp;
+                            <span style="letter-spacing: normal;">=</span>
+                            &nbsp;
+                            <span class="turquoise">endTime</span>
+                            &nbsp;
+                            <span style="letter-spacing: normal;">-</span>
+                            &nbsp;
+                            <span class="turquoise">startTime</span>
+                            <span style="letter-spacing: normal;">;</span>
+                        </span>
+
+                        <span class="display-flex">
+                            &emsp;&emsp;&emsp;&emsp;
+                            <span class="argument">}</span>
+                            <span class="comment">)</span>
+                        </span>
+
+                        <span class="display-flex">
+                            &emsp;&emsp;&emsp;&emsp;
+                            <span style="letter-spacing: normal;">.</span>
+                            <span class="argument">catch</span>
+                            <span class="comment">(</span>
+                            <span class="purple">error</span>
+                            &nbsp;
+                            <span class="tag">=></span>
+                            &nbsp;
+                            <span class="argument">{</span>
+                        </span>
+
+                        <span class="display-flex">
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            <span class="purple">console</span>
+                            <span style="letter-spacing: normal;">.</span>
+                            <span class="argument">error</span>
+                            <span class="tag">
+                                (
+                                <span class="pink">'Error pinging Website: '</span>
+                                <span style="letter-spacing: normal;">,</span>
+                                &nbsp;
+                                <span class="purple">error</span>
+                                )
+                            </span>
+                            <span style="letter-spacing: normal;">;</span>
+                        </span>
+
+                        <span class="display-flex">
+                            &emsp;&emsp;&emsp;&emsp;
+                            <span class="argument">}</span>
+                            <span class="comment">)</span>
+                            <span>;</span>
+                        </span>
+
+                        <span class="tag">}</span>
+                    </div>
+                </div>
+            </div>
+            <!-- end of backend -->
+
+            <!-- start of responsive -->
+            <div id="responsive" class="window reactive-design">
+                <div class="sunken-panel resizable-div">
+                    <div class="title-bar">
+                        <div class="title-bar-text">Responsive Design</div>
+                        <div class="title-bar-controls">
+                            <button aria-label="Minimize"></button>
+                            <button aria-label="Maximize"></button>
+                            <button aria-label="Close"></button>
+                        </div>
+                    </div>
+
+                    <div class="resize-left">
+                        <ul class="tree-view" style="box-shadow: none; font-size: 75%;">
+                            <li><b>Table of Contents</b></li>
+                            <li>Responsive Design</li>
+                            <li>
+                                Use Cases
+                                <ul>
+                                    <li>Flexible Layouts</li>
+                                    <li>Adapts to Different Devices</li>
+                                    <li>Improved User Experience</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Mobile
+                                <ul>
+                                    <li>60% of Global Internet Traffic</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="resize-middle">
+                        <p><b>Responsive Design</b></p>
+                        <p>Responsive design refers to the approach of designing and developing websites or applications that dynamically adjust their layout and content based on the user's device, screen size, orientation, and platform. </p>
+                    </div>
+
+                    <div class="resize-right">
+                        <p><b>Future Proofing</b></p>
+                        <p>Responsive design helps future-proof websites and applications by ensuring they can adapt to new devices and screen sizes as technology evolves.</p>
+                        <p><b>Accessibility</b></p>
+                        <p>Responsive design promotes accessibility by making content available to users on various devices, including those with disabilities who may use assistive technologies or alternative browsing methods.</p>
+                        <p><b>Media Queries</b></p>
+                        <p>Media queries are CSS rules that allow designers to apply different styles based on the characteristics of the device, such as screen width, resolution, and orientation.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end of responsive -->
+
+            <!-- start of database management -->
+            <div class="window database">
+                have a fake database query
+            </div>
+            <!-- end of database management -->
+
+            <!-- start of version control -->
+            <div class="window version">
+                have two side by side code examples and make it look like two separate commits
+            </div>
+            <!-- end of version control -->
             
-            <div class="vs-code">
-                <div class="vs-tabs">
-                    <div class="primary-tab">
-                        <span class="angle-bracket"><></span>
-                        <span class="tab-text">hello-world.html</span>
-                        <span class="primary-tab-x">✖</span>
-                    </div>
-                    <div class="secondary-tab">
-                        <span class="tab-pound"><i>#</i></span>
-                        <span class="tab-text">styles.css</span>
-                        <span class="primary-tab-x" style="z-index: -1;">✖</span>
-                    </div>
-                    <div class="empty-tab"></div>
-                </div>
-
-                <div class="code-file-path">
-                    <span>src <span class="greater-than">></span> hello-world.html</span>
-                </div>
-
-                <div class="code-body">
-                    <div class="line-numbers">
-                        <span style="margin-right: 1px;">1</span>
-                        <span>2</span>
-                        <span>3</span>
-                        <span>4</span>
-                        <span>5</span>
-                        <span>6</span>
-                        <span>7</span>
-                        <span>8</span>
-                        <span>9</span>
-                        <span>10</span>
-                        <span>11</span>
-                        <span>12</span>
-                        <span>13</span>
-                        <span>14</span>
-                        <span>15</span>
-                        <span>16</span>
-                        <span>17</span>
-                    </div>
-
-                    <div id="code" class="code-body-text">
-                        <span>&lt;!<span class="tag">DOCTYPE</span> <span class="attribute">htm</span><span class="attribute" style="letter-spacing: 3px;">l</span>&gt;</span>
-                        <span>&lt;<span class="tag">html</span> <span class="attribute">lang</span><span class="white-txt">=</span><span class="argument">"en</span><span class="argument" style="letter-spacing: 3px;">"</span>&gt;</span>
-                        <span>&lt;<span class="tag">hea</span><span class="tag" style="letter-spacing: 3px;">d</span>&gt;</span>
-                        <span>&emsp;&emsp;&lt;<span class="tag">meta</span> <span class="attribute">charset</span><span class="white-txt">=</span><span class="argument">"UTF-8</span><span class="argument" style="letter-spacing: 3px;">"</span>&gt;</span>
-                        <span>&emsp;&emsp;&lt;<span class="tag">meta</span> <span class="attribute">name</span><span class="white-txt">=</span><span class="argument">"viewport"</span> <span class="attribute">content</span><span class="white-txt">=</span><span class="argument">"width=device-width, &nbsp;initial-scale=1.0</span><span class="argument" style="letter-spacing: 3px;">"</span>&gt;</span>
-                        <span><span>&emsp;&emsp;&lt;<span class="tag">titl</span><span class="tag" style="letter-spacing: 3px;">e</span>&gt;</span><span class="white-txt">Hello World Exampl</span><span class="white-txt" style="letter-spacing: 3px;">e</span><span>&lt;<span style="letter-spacing: normal;">/</span><span class="tag">titl</span><span class="tag" style="letter-spacing: 3px;">e</span>&gt;</span></span>
-                        <span>&lt;<span style="letter-spacing: normal;">/</span><span class="tag">hea</span><span class="tag" style="letter-spacing: 3px;">d</span>&gt;</span>
-                        <span>&lt;<span class="tag">bod</span><span class="tag" style="letter-spacing: 3px;">y</span>&gt;</span>
-                        <span><span>&emsp;&emsp;&lt;<span class="tag">h</span><span class="tag" style="letter-spacing: 3px;">1</span>&gt;</span><span class="white-txt">Hello, World<span class="white-txt" style="letter-spacing: 3px;">!</span></span><span>&lt;<span style="letter-spacing: normal;">/</span><span class="tag">h</span><span class="tag" style="letter-spacing: 3px;">1</span>&gt;</span></span>
-                        <span>&lt;<span style="letter-spacing: normal;">/</span><span class="tag">bod</span><span class="tag" style="letter-spacing: 3px;">y</span>&gt;</span>
-                        <span>&lt;<span style="letter-spacing: normal;">/</span><span class="tag">htm</span><span class="tag" style="letter-spacing: 3px;">l</span>&gt;</span>
-                    </div>
-                </div>
+            <!-- start of server management -->
+            <div class="window server">
+                
             </div>
-        </div>
+            <!-- end of server management -->
 
+            <!-- start of Web Security -->
+            <div class="window security">
+                have a fake log in (username & password) then write is as plaintext to sql or something
+            </div>
+            <!-- end of Web Security -->
+
+            <!-- start of problem solving -->
+            <div class="window problem-solving">
+                have a very simple calculator [ ] + [ ] = [ ] then be able to expand code to a WAY over complicated code snippet 
+            </div>
+            <!-- end of problem solving -->
+
+            <!-- start of regex -->
+            <div class="window regex">
+                regex with just a link to a website that does regex
+            </div>
+            <!-- end of regex -->
+
+            <!-- start of soft skills -->
+            <div class="window soft-skills">
+                talk a little bit about speaking and teamwork
+            </div>
+            <!-- end of soft skills -->
+
+        </div>
     </div>
 </div>

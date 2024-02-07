@@ -602,6 +602,7 @@ input[type=range]::-webkit-slider-runnable-track {
 .file-explorer {
     color: #bebebe;
     background-color: #252526;
+    width: 125px;
 }
 
 .file-explorer-head {
@@ -647,7 +648,11 @@ input[type=range]::-webkit-slider-runnable-track {
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: 16px auto;
-    margin-left: 30px;
+    margin-left: 27px;
+}
+
+.open-files div {
+    padding: 2px 0;
 }
 
 .workspace-files div {
@@ -659,6 +664,7 @@ input[type=range]::-webkit-slider-runnable-track {
     grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
     grid-template-columns: 16px auto;
     margin-left: 17px;
+    position: relative;
 }
 
 .expanded-folder div {
@@ -669,6 +675,8 @@ input[type=range]::-webkit-slider-runnable-track {
     display: block;
     height: 10px;
     margin: 0 auto;
+    position: relative;
+    z-index: 1;
 }
 
 .fi { /*file indent*/
@@ -687,6 +695,9 @@ input[type=range]::-webkit-slider-runnable-track {
 
 .tab-text {
     margin: 0 3px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
 }
 
 .primary-tab {
@@ -772,8 +783,20 @@ input[type=range]::-webkit-slider-runnable-track {
     height: 13px;
 }
 
-.file-name:hover {
-    background-color: rgb(42, 45, 46);
+.file-name {
+    position: relative;
+}
+
+.file-name:hover::before {
+    content: "";
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 125px;
+    height: 100%;
+    background-color: #2a2d2e;
+    z-index: 0;
 }
 
 .tag {
@@ -834,4 +857,73 @@ input[type=range]::-webkit-slider-runnable-track {
 .blue {
     color: #1c7cff;
     letter-spacing: normal;
+}
+
+.purple {
+    color: rgb(66, 0, 180);
+    letter-spacing: normal;
+}
+
+.backend-example {
+    display: flex;
+}
+
+.backend-text {
+    width: 50%;
+    height: 100%;
+}
+
+.backend-code {
+    width: 50%;
+    height: 100%;
+}
+
+.reactive-design {
+    overflow: auto;
+    height: 200px;
+    box-sizing: border-box;
+}
+
+.resizable-div {
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    min-width: 0px;
+    min-height: 0px;
+    max-width: 100%;
+    max-height: 100%;
+    resize: both;
+}
+
+.resize-left {
+    float: left;
+    width: 20%;
+}
+
+.resize-middle {
+    float: left;
+    width: 60%;
+    overflow: hidden;
+}
+
+.resize-right {
+    float: left;
+    background-color: #0000001a;
+    width: 20%;
+    padding: 10px;
+}
+
+@media (min-width: 401px) and (max-width: 900px) {
+    .resize-middle {
+        width: 80%;
+    }
+    .resize-right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .resize-left, .resize-middle, .resize-right {
+        width: 100%;
+    }
 }
