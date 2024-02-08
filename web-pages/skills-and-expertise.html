@@ -383,8 +383,9 @@
                     <span id="result">=</span>
                     <button type="button" onclick="calculate()">calculate</button>
                 </form>
-                <div class="sunken-panel" style="padding: 10px;">
-                    <div class="code-body-text">
+                <div class="show-code" onclick="toggleDisplay('problem-solving-code')">show code</div>
+                <div id="problem-solving-code" class="sunken-panel" style="display: none;">
+                    <div class="code-body-text" style="padding: 10px;">
                         <span class="display-flex">
                             <span class="tag">function</span>
                             &nbsp;
@@ -402,9 +403,9 @@
                             &emsp;&emsp;
                             <span class="tag">let</span>
                             &nbsp;
-                            <span class="grey-txt">num1&nbsp;&nbsp;=&nbsp;&nbsp;a.</span>
+                            <span class="grey-txt">num1&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;a.</span>
                             <span class="argument">toString</span>
-                            <span class="comment">( )</span>
+                            <span class="comment">(&nbsp;)</span>
                             <span class="grey-txt">.</span>
                             <span class="argument">split</span>
                             <span class="comment">
@@ -458,7 +459,7 @@
                             &nbsp;
                             <span class="comment">
                                 (
-                                <span class="grey-txt">x,&nbsp;y</span>
+                                <span class="grey-txt">x,&nbsp;&nbsp;y</span>
                                 )
                             </span>
                             &nbsp;
@@ -505,6 +506,7 @@
                             <span class="tag">let</span>
                             &nbsp;
                             <span class="grey-txt">sum&nbsp;&nbsp;=</span>
+                            &nbsp;
                             <span class="tag">
                                 (
                                 <span class="grey-txt">x.</span>
@@ -535,6 +537,113 @@
                             &nbsp;
                             <span class="grey-txt">carry;</span>
                         </span>
+
+                        <span class="display-flex">
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            <span class="grey-txt">carry&nbsp;&nbsp;=&nbsp;&nbsp;sum&nbsp;&nbsp;>=</span>
+                            &nbsp;
+                            <span class="comment">10</span>
+                            &nbsp;
+                            <span class="grey-txt">?</span>
+                            &nbsp;
+                            <span class="comment">1</span>
+                            &nbsp;
+                            <span class="grey-txt">:</span>
+                            &nbsp;
+                            <span class="comment">0</span>
+                            <span class="grey-txt">;</span>
+                        </span>
+
+                        <span class="display-flex">
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            <span class="grey-txt">result.</span>
+                            <span class="argument">unshift</span>
+                            <span class="tag">
+                                (
+                                <span class="grey-txt">sum&nbsp;&nbsp;%</span>
+                                &nbsp;
+                                <span class="comment">10</span>
+                                )
+                            </span>
+                            <span class="grey-txt">;</span>
+                        </span>
+
+                        <span class="display-flex">
+                            &emsp;&emsp;&emsp;&emsp;
+                            <span class="array">}</span>
+                        </span>
+
+                        <span class="display-flex">
+                            &emsp;&emsp;&emsp;&emsp;
+                            <span class="pink">if</span>
+                            &nbsp;
+                            <span class="array">
+                                (
+                                <span class="grey-txt">carry</span>
+                                )
+                            </span>
+                            &nbsp;
+                            <span class="grey-txt">result.</span>
+                            <span class="argument">unshift</span>
+                            <span class="array">
+                                (
+                                <span class="grey-txt">carry</span>
+                                )
+                            </span>
+                            <span class="grey-txt">;</span>
+                        </span>
+
+                        <span class="display-flex">
+                            &emsp;&emsp;&emsp;&emsp;
+                            <span class="pink">return</span>
+                            &nbsp;
+                            <span class="grey-txt">result;</span>
+                        </span>
+
+                        <span class="display-flex">
+                            &emsp;&emsp;
+                            <span class="comment">}</span>
+                            <span class="grey-txt">;</span>
+                        </span>
+
+                        <span>&nbsp;</span>
+
+                        <span class="display-flex">
+                            &emsp;&emsp;
+                            <span class="tag">let</span>
+                            &nbsp;
+                            <span class="grey-txt">sum&nbsp;&nbsp;=</span>
+                            &nbsp;
+                            <span class="argument">add</span>
+                            <span class="comment">
+                                (
+                                <span class="grey-txt">num1,&nbsp;&nbsp;num2</span>
+                                )
+                            </span>
+                            <span class="grey-txt">.</span>
+                            <span class="argument">join</span>
+                            <span class="comment">
+                                (
+                                <span class="pink">'&nbsp;'</span>
+                                )
+                            </span>
+                            <span class="grey-txt">;</span>
+                        </span>
+
+                        <span class="display-flex">
+                            &emsp;&emsp;
+                            <span class="pink">return</span>
+                            &nbsp;
+                            <span class="argument">parseInt</span>
+                            <span class="comment">
+                                (
+                                <span class="grey-txt">sum</span>
+                                )
+                            </span>
+                            <span class="grey-txt">;</span>
+                        </span>
+
+                        <span class="tag">}</span>
                     </div>
                 </div>
             </div>
@@ -542,7 +651,14 @@
 
             <!-- start of regex -->
             <div class="window regex">
-                regex with just a link to a website that does regex
+                <h4>Regular Expressions</h4>
+                <form id="regex">
+                    <input type="text" id="regex-input" placeholder="regex name validator">
+                </form>
+                <div class="show-code" onclick="toggleDisplay('regex-code')">show code</div>
+                <div id="regex-code" class="sunken-panel" style="display: none;">
+                    <a href="https://www.chatgpt.com" target="_blank">https://www.chatgpt.com</a>
+                </div>
             </div>
             <!-- end of regex -->
 

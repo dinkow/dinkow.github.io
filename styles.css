@@ -937,3 +937,7 @@ input[type=range]::-webkit-slider-runnable-track {
         width: 100%;
     }
 }
+
+.show-code {
+    cursor: pointer;
+}

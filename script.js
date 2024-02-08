@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    loadPage('./web-pages/skills-and-expertise.html', 'Microsoft Internet Explorer', false, false, 'http://www.google.com?hl=en');
+    loadPage('./web-pages/search-results.html', 'Microsoft Internet Explorer', false, false, 'http://www.google.com?hl=en');
 });
 
 function loadNewHTML(href) {
@@ -21,7 +21,7 @@ function loadPage(html, barText, backButton, forwardButton, webAddressText) {
         var currentWebAddressText = document.getElementById('web-address').innerText;
     };
 
-    loadNewHTML(html)
+    return loadNewHTML(html)
         .then(() => {
             // update title bar
             var toolbarText = document.getElementById('title-bar-text');
@@ -169,4 +169,27 @@ function addTwoNumbers(a, b) {
 
     let sum = add(num1, num2).join('');
     return parseInt(sum);
+}
+
+function toggleDisplay(elementId) {
+    var element = document.getElementById(elementId);
+
+    if (element.style.display === 'none') {
+        element.style.display = element.dataset.prevDisplay || '';
+    } else {
+        element.dataset.prevDisplay = element.style.display;
+        element.style.display = 'none';
+    }
+}
+
+function skillsAndExpertise() {
+    const regexExample = document.getElementById('regex-input');
+
+    regexExample.addEventListener('input', function() {
+        if (/^[A-Za-z]+(?:[ '-][A-Za-z]+)*$/.test(this.value)) {
+            this.style.border = '1px solid green'
+        } else {
+            this.style.border = '1px solid red'
+        }
+    })
 }
