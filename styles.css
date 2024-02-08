@@ -814,8 +814,18 @@ input[type=range]::-webkit-slider-runnable-track {
     letter-spacing: normal;
 }
 
+.grey-txt {
+    color: #5a5a5a;;
+    letter-spacing: normal;
+}
+
 .argument {
     color: #ce9178;
+    letter-spacing: normal;
+}
+
+.array {
+    color: #b65c38;
     letter-spacing: normal;
 }
 

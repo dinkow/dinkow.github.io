@@ -166,7 +166,7 @@
                     <span><span id="ping-time">-</span> milliseconds</span>
                 </div>
                 <div class="sunken-panel backend-code">
-                    <div class="code-body-text" style="color: rgb(90, 90, 90); background-color: #f9f8f8; padding: 10px;">
+                    <div class="code-body-text" style="color: #5a5a5a; background-color: #f9f8f8; padding: 10px;">
                         <span class="display-flex">
                             <span class="tag">function</span>
                             &nbsp;
@@ -375,7 +375,168 @@
 
             <!-- start of problem solving -->
             <div class="window problem-solving">
-                have a very simple calculator [ ] + [ ] = [ ] then be able to expand code to a WAY over complicated code snippet 
+                <h4>Problem Solving</h4>
+                <form class="calculator">
+                    <input type="number" id="num1" required>
+                    <span>+</span>
+                    <input type="number" id="num2" required>
+                    <span id="result">=</span>
+                    <button type="button" onclick="calculate()">calculate</button>
+                </form>
+                <div class="sunken-panel" style="padding: 10px;">
+                    <div class="code-body-text">
+                        <span class="display-flex">
+                            <span class="tag">function</span>
+                            &nbsp;
+                            <span class="argument">addTwoNumbers</span>
+                            <span class="tag">
+                                (
+                                <span class="grey-txt">a,&nbsp;b</span>
+                                )
+                                &nbsp;
+                                {
+                            </span>
+                        </span>
+
+                        <span class="display-flex">
+                            &emsp;&emsp;
+                            <span class="tag">let</span>
+                            &nbsp;
+                            <span class="grey-txt">num1&nbsp;&nbsp;=&nbsp;&nbsp;a.</span>
+                            <span class="argument">toString</span>
+                            <span class="comment">( )</span>
+                            <span class="grey-txt">.</span>
+                            <span class="argument">split</span>
+                            <span class="comment">
+                                (
+                                <span class="pink">' '</span>
+                                )
+                            </span>
+                            <span class="grey-txt">.</span>
+                            <span class="argument">map</span>
+                            <span class="comment">
+                                (
+                                <span class="turquoise">Number</span>
+                                )
+                            </span>
+                            <span class="grey-txt">;</span>
+                        </span>
+
+                        <span class="display-flex">
+                            &emsp;&emsp;
+                            <span class="tag">let</span>
+                            &nbsp;
+                            <span class="grey-txt">num2&nbsp;&nbsp;=&nbsp;&nbsp;b.</span>
+                            <span class="argument">toString</span>
+                            <span class="comment">(&nbsp;)</span>
+                            <span class="grey-txt">.</span>
+                            <span class="argument">split</span>
+                            <span class="comment">
+                                (
+                                <span class="pink">' '</span>
+                                )
+                            </span>
+                            <span class="grey-txt">.</span>
+                            <span class="argument">map</span>
+                            <span class="comment">
+                                (
+                                <span class="turquoise">Number</span>
+                                )
+                            </span>
+                            <span class="grey-txt">;</span>
+                        </span>
+
+                        <span>&nbsp;</span>
+
+                        <span class="display-flex">
+                            &emsp;&emsp;
+                            <span class="tag">const</span>
+                            &nbsp;
+                            <span class="argument">add</span>
+                            &nbsp;
+                            <span class="grey-txt">=</span>
+                            &nbsp;
+                            <span class="comment">
+                                (
+                                <span class="grey-txt">x,&nbsp;y</span>
+                                )
+                            </span>
+                            &nbsp;
+                            <span class="tag">=></span>
+                            &nbsp;
+                            <span class="comment">{</span>
+                        </span>
+
+                        <span class="display-flex">
+                            &emsp;&emsp;&emsp;&emsp;
+                            <span class="tag">let</span>
+                            &nbsp;
+                            <span class="grey-txt">carry&nbsp;&nbsp;=</span>
+                            &nbsp;
+                            <span class="comment">0</span>
+                            <span class="grey-txt">;</span>
+                        </span>
+
+                        <span class="display-flex">
+                            &emsp;&emsp;&emsp;&emsp;
+                            <span class="tag">let</span>
+                            &nbsp;
+                            <span class="grey-txt">result&nbsp;&nbsp;=</span>
+                            &nbsp;
+                            <span class="array">[&nbsp;]</span>
+                            <span class="grey-txt">;</span>
+                        </span>
+
+                        <span class="display-flex">
+                            &emsp;&emsp;&emsp;&emsp;
+                            <span class="pink">while</span>
+                            &nbsp;
+                            <span class="array">
+                                (
+                                <span class="grey-txt">x.length&nbsp;&nbsp;||&nbsp;&nbsp;y.length</span>
+                                )
+                                &nbsp;
+                                {
+                            </span>
+                        </span>
+
+                        <span class="display-flex">
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            <span class="tag">let</span>
+                            &nbsp;
+                            <span class="grey-txt">sum&nbsp;&nbsp;=</span>
+                            <span class="tag">
+                                (
+                                <span class="grey-txt">x.</span>
+                                <span class="argument">pop</span>
+                                <span class="comment">(&nbsp;)</span>
+                                &nbsp;
+                                <span class="grey-txt">||</span>
+                                &nbsp;
+                                <span class="comment">0</span>
+                                )
+                            </span>
+                            &nbsp;
+                            <span class="grey-txt">+</span>
+                            &nbsp;
+                            <span class="tag">
+                                (
+                                <span class="grey-txt">y.</span>
+                                <span class="argument">pop</span>
+                                <span class="comment">(&nbsp;)</span>
+                                &nbsp;
+                                <span class="grey-txt">||</span>
+                                &nbsp;
+                                <span class="comment">0</span>
+                                )
+                            </span>
+                            &nbsp;
+                            <span class="grey-txt">+</span>
+                            &nbsp;
+                            <span class="grey-txt">carry;</span>
+                        </span>
+                    </div>
+                </div>
             </div>
             <!-- end of problem solving -->
 
