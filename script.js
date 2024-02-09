@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    loadPage('./web-pages/search-results.html', 'Microsoft Internet Explorer', false, false, 'http://www.google.com?hl=en');
+    loadPage('./web-pages/skills-and-expertise.html', 'Microsoft Internet Explorer', false, false, 'http://www.google.com?hl=en');
 });
 
 function loadNewHTML(href) {
@@ -108,6 +108,16 @@ function formatTime(time) {
     var seconds = Math.floor(time % 60);
     seconds = seconds < 10 ? "0" + seconds : seconds;
     return minutes + ":" + seconds;
+}
+
+function loadSkill(href) {
+    return fetch(href)
+        .then(response => response.text())
+        .then(html => {
+            var skillDiv = document.getElementById('skill-div');
+            skillDiv.innerHTML = html;  
+        })
+        .catch(error => console.error('Error fetching HTML:', error));
 }
 
 function loadCode(href, iconFile, file) {

@@ -16,7 +16,7 @@
 body {
     margin: 0;
     padding: 0;
-
+    zoom: 200%;
 }
 
 button:active,
@@ -595,6 +595,18 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 /* skills-and-expertise.html */
+menu[role=tablist] > li {
+    background-color: silver;
+}
+
+.top-row li[aria-selected=true] {
+    z-index: 1 !important;
+}
+
+.top-row:first-child li[aria-selected=true] {
+    margin-left: 0 !important;
+}
+
 .programming-languages {
     display: flex;
 }
@@ -940,4 +952,27 @@ input[type=range]::-webkit-slider-runnable-track {
 
 .show-code {
     cursor: pointer;
+}
+
+.database {
+    display: flex;
+}
+
+.database-text {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.database-query {
+    display: grid;
+    grid-template-columns: repeat(7, fit-content(20px));
+    grid-gap: 2px 5px;
+    font-weight: bold;
+    padding: 5px 10px;
+    align-items: center;
+}
+
+.query-line {
+    grid-column: 1 / 8;
 }

@@ -1,0 +1,152 @@
+<div class="sunken-panel">
+    <div class="programming-languages">
+        <div class="file-explorer">
+            <div class="file-explorer-head">
+                <span class="explorer-head-text">EXPLORER</span>
+                <span class="triple-dot">...</span>
+            </div>
+
+            <div class="open-editors">
+                <div>
+                    <span class="vertical-greater-than">></span>
+                    <span class="explore-header">OPEN EDITORS</span>
+                </div>
+                <div class="open-files">
+                    <div style="display: flex; justify-content: center;">
+                        <img id="current-file-icon" src="../assets/images/skills-and-expertise/notes.png" style="height: 9px; margin-top: 1px;">
+                    </div>
+                    <div>
+                        <span id="current-file" class="tab-text">notes.txt</span>
+                    </div>
+                    <div style="display: flex; justify-content: center;">
+                        <img src="../assets/images/skills-and-expertise/css.png" style="height: 8px; margin-top: 1px;">
+                    </div>
+                    <div>
+                        <span class="tab-text" style="margin-right: 1px; cursor: initial;">styles.css</span>
+                    </div>
+                </div>
+            </div>
+
+            <hr style="width: 100%; height: 1px; background-color: #474747; border: none;">
+
+            <div class="open-editors">
+                <span class="vertical-greater-than">></span>
+                <span class="explore-header">PROJECT</span>
+                <div class="workspace-files">
+                    <div class="fi">
+                        <span class="vertical-greater-than">></span>
+                        <span>src</span>
+                    </div>
+                    <div class="expanded-folder">
+                        <div>
+                            <img src="../assets/images/skills-and-expertise/js.png" style="height: 8px; margin-top: 1px;">
+                        </div>
+                        <div class="file-name" onclick="loadCode('../assets/vs-code-files/javascript.html', 'js.png', 'JavaScript.js')">
+                            <span class="tab-text">JavaScript.js</span>
+                        </div>
+                        <div>
+                            <img src="../assets/images/skills-and-expertise/py.png">
+                        </div>
+                        <div class="file-name" onclick="loadCode('../assets/vs-code-files/python.html', 'py.png', 'Python.py')">
+                            <span class="tab-text">Python.py</span>
+                        </div>
+                        <div>
+                            <img src="../assets/images/skills-and-expertise/java.png">
+                        </div>
+                        <div class="file-name" onclick="loadCode('../assets/vs-code-files/java.html', 'java.png', 'Java.java')">
+                            <span class="tab-text">Java.java</span>
+                        </div>
+                        <div>
+                            <img src="../assets/images/skills-and-expertise/cs.png" style="height: 9px;">
+                        </div>
+                        <div class="file-name" onclick="loadCode('../assets/vs-code-files/c-sharp.html', 'cs.png', 'C#.cs')">
+                            <span class="tab-text">C#.cs</span>
+                        </div>
+                        <div>
+                            <img src="../assets/images/skills-and-expertise/cpp.png"  style="height: 9px;">
+                        </div>
+                        <div class="file-name" onclick="loadCode('../assets/vs-code-files/cpp.html', 'cpp.png', 'C and C++.cpp')">
+                            <span class="tab-text">C and C++.cpp</span>
+                        </div>
+                        <div>
+                            <img src="../assets/images/skills-and-expertise/sql.png"  style="height: 9px;">
+                        </div>
+                        <div class="file-name" onclick="loadCode('../assets/vs-code-files/sql.html', 'sql.png', 'SQL.sql')">
+                            <span class="tab-text">SQL.sql</span>
+                        </div>
+                        <div>
+                            <img src="../assets/images/skills-and-expertise/html.png" style="height: 8px; margin-top: 1px;">
+                        </div>
+                        <div class="file-name" onclick="loadCode('../assets/vs-code-files/html.html', 'html.png', 'HTML.html')">
+                            <span class="tab-text">HTML.html</span>
+                        </div>
+                        <div>
+                            <img src="../assets/images/skills-and-expertise/css.png" style="height: 8px; margin-top: 1px;">
+                        </div>
+                        <div class="file-name" onclick="loadCode('../assets/vs-code-files/css.html', 'css.png', 'CSS.css')">
+                            <span class="tab-text" style="margin-left: 4px;">CSS.css</span>
+                        </div>
+                        <div>
+                            <img src="../assets/images/skills-and-expertise/swift.png">
+                        </div>
+                        <div class="file-name" onclick="loadCode('../assets/vs-code-files/swift.html', 'swift.png', 'Swift.swift')">
+                            <span class="tab-text">Swift.swift</span>
+                        </div>
+                        <div>
+                            <img src="../assets/images/skills-and-expertise/bash.png">
+                        </div>
+                        <div class="file-name" onclick="loadCode('../assets/vs-code-files/bash.html' , 'bash.png', 'Bash.sh')">
+                            <span class="tab-text">Bash.sh</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="vs-code">
+            <div class="vs-tabs">
+                <div class="primary-tab">
+                    <img id="current-file-icon" src="../assets/images/skills-and-expertise/notes.png" style="height: 9px; margin-right: 5px;">
+                    <span id="current-file" class="tab-text">notes.txt</span>
+                    <span class="primary-tab-x">✖</span>
+                </div>
+                <div class="secondary-tab">
+                    <span class="tab-pound"><i>#</i></span>
+                    <span class="tab-text">styles.css</span>
+                    <span class="primary-tab-x" style="z-index: -1;">✖</span>
+                </div>
+                <div class="empty-tab"></div>
+            </div>
+
+            <div class="code-file-path">
+                <span>src <span class="greater-than">></span> <span id="current-file"></span>notes.txt</span>
+            </div>
+
+            <div class="code-body">
+                <div class="line-numbers">
+                    <span style="margin-right: 1px;">1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>6</span>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>10</span>
+                    <span>11</span>
+                    <span>12</span>
+                    <span>13</span>
+                    <span>14</span>
+                    <span>15</span>
+                    <span>16</span>
+                    <span>17</span>
+                </div>
+
+                <div id="code" class="code-body-text">
+                    <span class="white-txt">click on the file names!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

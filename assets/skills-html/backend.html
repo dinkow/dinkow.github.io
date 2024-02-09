@@ -1,0 +1,139 @@
+<div class="backend-example">
+    <div class="backend-text">
+        <h4>Backend</h4>
+        <p>I have lots of experience with backend</p>
+        <button onclick="pingWebsite()">Ping Website</button>
+        <span><span id="ping-time">-</span> milliseconds</span>
+    </div>
+    <div class="sunken-panel backend-code">
+        <div class="code-body-text" style="color: #5a5a5a; background-color: #f9f8f8; padding: 10px;">
+            <span class="display-flex">
+                <span class="tag">function</span>
+                &nbsp;
+                <span class="argument">pingWebsite</span>
+                <span class="blue">( )</span>
+                &nbsp;
+                <span class="blue">{</span>
+            </span>
+            
+            <span class="display-flex">
+                &emsp;&emsp;
+                <span class="tag">const</span>
+                &nbsp;
+                <span class="turquoise">startTime</span>
+                &nbsp;
+                <span style="letter-spacing: normal;">=</span>
+                &nbsp;
+                <span class="tag">new</span>
+                &nbsp;
+                <span class="turquoise">Date</span>
+                <span class="comment">( )</span>
+                <span style="letter-spacing: normal;">.</span>
+                <span class="argument">getTime</span>
+                <span class="comment">( )</span>
+                <span>;</span>
+            </span>
+
+            <span>&nbsp;</span>
+
+            <span class="display-flex">
+                &emsp;&emsp;
+                <span class="argument">fetch</span>
+                <span class="comment">
+                    (
+                        <span class="pink">'https://www.ianmaigler.com'</span>
+                    )
+                </span>
+            </span>
+
+            <span class="display-flex">
+                &emsp;&emsp;&emsp;&emsp;
+                <span style="letter-spacing: normal;">.</span>
+                <span class="argument">then</span>
+                <span class="comment">(</span>
+                <span class="attribute">response</span>
+                &nbsp;
+                <span class="tag">=></span>
+                &nbsp;
+                <span class="argument">{</span>
+            </span>
+
+            <span class="display-flex">
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <span class="tag">const</span>
+                &nbsp;
+                <span class="turquoise">endTime</span>
+                &nbsp;
+                <span style="letter-spacing: normal;">=</span>
+                &nbsp;
+                <span class="tag">new</span>
+                &nbsp;
+                <span class="turquoise">Date</span>
+                <span class="tag">( )</span>
+                <span style="letter-spacing: normal;">.</span>
+                <span class="argument">getTime</span>
+                <span class="tag">( )</span>
+                <span style="letter-spacing: normal;">;</span>
+            </span>
+
+            <span class="display-flex">
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <span class="tag">const</span>
+                &nbsp;
+                <span class="turquoise">pingTime</span>
+                &nbsp;
+                <span style="letter-spacing: normal;">=</span>
+                &nbsp;
+                <span class="turquoise">endTime</span>
+                &nbsp;
+                <span style="letter-spacing: normal;">-</span>
+                &nbsp;
+                <span class="turquoise">startTime</span>
+                <span style="letter-spacing: normal;">;</span>
+            </span>
+
+            <span class="display-flex">
+                &emsp;&emsp;&emsp;&emsp;
+                <span class="argument">}</span>
+                <span class="comment">)</span>
+            </span>
+
+            <span class="display-flex">
+                &emsp;&emsp;&emsp;&emsp;
+                <span style="letter-spacing: normal;">.</span>
+                <span class="argument">catch</span>
+                <span class="comment">(</span>
+                <span class="purple">error</span>
+                &nbsp;
+                <span class="tag">=></span>
+                &nbsp;
+                <span class="argument">{</span>
+            </span>
+
+            <span class="display-flex">
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <span class="purple">console</span>
+                <span style="letter-spacing: normal;">.</span>
+                <span class="argument">error</span>
+                <span class="tag">
+                    (
+                    <span class="pink">'Error pinging Website: '</span>
+                    <span style="letter-spacing: normal;">,</span>
+                    &nbsp;
+                    <span class="purple">error</span>
+                    )
+                </span>
+                <span style="letter-spacing: normal;">;</span>
+            </span>
+
+            <span class="display-flex">
+                &emsp;&emsp;&emsp;&emsp;
+                <span class="argument">}</span>
+                <span class="comment">)</span>
+                <span>;</span>
+            </span>
+
+            <span class="tag">}</span>
+        </div>
+    </div>
+</div>
