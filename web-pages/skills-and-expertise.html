@@ -6,23 +6,37 @@
 
             <div style="padding-top: 5px;">
                 <menu role="tablist" class="multirows top-row">
-                    <li role="tab" aria-selected="true"><a href="" onclick="loadSkill('../assets/skills-html/skills.html'); return false;">Skills</a></li>
-                    <li role="tab"><a href="" onclick="loadSkill('../assets/skills-html/vs-code.html'); return false;">Languages</a></a>
-                    <li role="tab"><a href="" onclick="loadSkill('../assets/skills-html/frontend.html'); return false;">Frontend</a></a>
-                    <li role="tab"><a href="" onclick="loadSkill('../assets/skills-html/backend.html'); return false;">Backend</a></li>
-                    <li role="tab"><a href="" onclick="loadSkill('../assets/skills-html/database.html'); return false;">Databases</a></li>
-                    <li role="tab"><a href="" onclick="loadSkill('../assets/skills-html/version-control.html'); return false;">Version Control</a></li>
+                    <li role="tab" aria-selected="true"><a href="" onclick="loadSkill(event, '../assets/skills-html/skills.html'); return false;">Skills</a></li>
+                    <li role="tab"><a href="" onclick="loadSkill(event, '../assets/skills-html/vs-code.html'); return false;">Languages</a></a>
+                    <li role="tab"><a href="" onclick="loadSkill(event, '../assets/skills-html/frontend.html'); return false;">Frontend</a></a>
+                    <li role="tab"><a href="" onclick="loadSkill(event, '../assets/skills-html/backend.html'); return false;">Backend</a></li>
+                    <li role="tab"><a href="" onclick="loadSkill(event, '../assets/skills-html/database.html'); return false;">Databases</a></li>
+                    <li role="tab"><a href="" onclick="loadSkill(event, '../assets/skills-html/version-control.html'); return false;">Version Control</a></li>
                 </menu>
                 <menu role="tablist" class="multirows">
-                    <li role="tab"><a href="" onclick="loadSkill('../assets/skills-html/server-management.html'); return false;">Server Management</a></li>
-                    <li role="tab"><a href="" onclick="loadSkill('../assets/skills-html/auth.html'); return false;">Auth</a></li>
-                    <li role="tab"><a href="" onclick="loadSkill('../assets/skills-html/problem-solving.html'); return false;">Problem Solving</a></li>
-                    <li role="tab"><a href="" onclick="loadSkill('../assets/skills-html/regex.html').then(skillsAndExpertise); return false;">Regex</a></li>
-                    <li role="tab"><a href="" onclick="loadSkill('../assets/skills-html/soft-skills.html'); return false;">Soft Skills</a></li>
+                    <li role="tab"><a href="" onclick="loadSkill(event, '../assets/skills-html/server-management.html'); return false;">Server Management</a></li>
+                    <li role="tab"><a href="" onclick="loadSkill(event, '../assets/skills-html/auth.html'); return false;">Auth</a></li>
+                    <li role="tab"><a href="" onclick="loadSkill(event, '../assets/skills-html/problem-solving.html'); return false;">Problem Solving</a></li>
+                    <li role="tab"><a href="" onclick="loadSkill(event, '../assets/skills-html/regex.html').then(skillsAndExpertise); return false;">Regex</a></li>
+                    <li role="tab"><a href="" onclick="loadSkill(event, '../assets/skills-html/soft-skills.html'); return false;">Soft Skills</a></li>
                 </menu>
                 <div class="window" role="tabpanel">
                     <div id="skill-div">
-
+                        <div class="skill">
+                            <div class="skills-left">
+                                <h4>Skills and Expertise</h4>
+                                <p>
+                                    Welcome to my Skills and Expertise page! Here you can find a blend of knowledge ive gained through both my time spent
+                                    in school as well as through the process of trial and error while working on personal projects. I have built a solid
+                                    foundation during my studies, but what i think truly sets me apart is my ability to quickly learn new concepts. Through 
+                                    the process of trial and error I have discovered that every mistake is an opportunity for growth.
+                                </p>
+                            </div>
+                            <div class="skills-right">
+                                <img class="static-img" src="../assets/images/skills-and-expertise/cat-standing.gif">
+                                <img class="active-gif" src="../assets/images/skills-and-expertise/cat-dancing.gif">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,16 +1,18 @@
 <div class="problem-solving">
-    <h4>Problem Solving</h4>
-    <form class="calculator">
-        <input type="number" id="num1" required>
-        <span>+</span>
-        <input type="number" id="num2" required>
-        <span id="result">=</span>
-        <button type="button" onclick="calculate()">calculate</button>
-    </form>
-    <div>
-        <span class="show-code" onclick="toggleDisplay('problem-solving-code')">show code</span>
+    <div class="problem-solving-text">
+        <h4>Problem Solving</h4>
+        <form class="calculator">
+            <input type="number" id="num1" required>
+            <span>+</span>
+            <input type="number" id="num2" required>
+            <span id="result">=</span>
+            <button type="button" onclick="calculate()">calculate</button>
+        </form>
+        <div>
+            <span class="show-code" onclick="toggleDisplay('problem-solving-code')">show code</span>
+        </div>
     </div>
-    <div id="problem-solving-code" class="sunken-panel" style="display: none;">
+    <div id="problem-solving-code" class="sunken-panel" style="display: none; width: 55%; height: 100%;">
         <div class="code-body-text" style="padding: 10px;">
             <span class="display-flex">
                 <span class="tag">function</span>

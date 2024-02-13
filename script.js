@@ -110,12 +110,20 @@ function formatTime(time) {
     return minutes + ":" + seconds;
 }
 
-function loadSkill(href) {
+function loadSkill(event, href) {
     return fetch(href)
         .then(response => response.text())
         .then(html => {
             var skillDiv = document.getElementById('skill-div');
-            skillDiv.innerHTML = html;  
+            skillDiv.innerHTML = html;
+
+            var links = document.querySelectorAll('menu a');
+
+            links.forEach(link => {
+                link.parentElement.removeAttribute('aria-selected');
+            });
+
+            event.target.parentElement.setAttribute('aria-selected', 'true');
         })
         .catch(error => console.error('Error fetching HTML:', error));
 }
