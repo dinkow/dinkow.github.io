@@ -151,7 +151,7 @@ function loadCode(href, iconFile, file) {
 function pingWebsite() {
     const startTime = new Date().getTime();
 
-    fetch('http://localhost:8080')
+    fetch('https://dinkow.github.io')
         .then(response => {
             const endTime = new Date().getTime();
             const pingTime = endTime - startTime;

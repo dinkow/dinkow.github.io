@@ -186,22 +186,28 @@ button:focus {
     height: 25px;
     background-color: fuchsia;
     display: flex;
+    align-items: center;
+}
+
+.max-header-width {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 4px 0 4px;
+    max-width: 660px;
+    margin: auto;
+    flex-grow: 1;
 }
 
 .top-nav {
     height: 20px;
     background-color: rgb(255, 118, 255);
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 10px 0 10px;
 }
 
 .top-nav hr {
-    height: 40%;
+    height: 12px;
+    margin: 0 5px;
 }
 
 .profile-border {
@@ -921,14 +927,14 @@ menu[role=tablist] > li {
 }
 
 .backend-text {
-    width: 50%;
+    width: 49%;
     height: 100%;
     padding: 10px;
 }
 
 .backend-code {
-    width: 50%;
-    height: 100%;
+    width: 51%;
+    background-color: #f9f8f8;
 }
 
 .reactive-design {
@@ -1017,4 +1023,22 @@ menu[role=tablist] > li {
 
 .query-line {
     grid-column: 1 / 8;
+}
+
+
+
+/* MOBILE STYLING */
+
+/* Tablet styles */
+@media (max-width: 991px) {
+    body {
+
+    }
+}
+
+  /* Mobile styles */
+@media (max-width: 767px) {
+    body {
+        zoom: 100%
+    }
 }
