@@ -287,8 +287,8 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 .contact-info {
-    display: flex;
-    flex-direction: column
+    display: grid;
+    grid-template-columns: 22px auto 22px auto;
 }
 
 .music-list-container {

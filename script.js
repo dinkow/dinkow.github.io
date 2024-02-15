@@ -211,3 +211,13 @@ function skillsAndExpertise() {
         }
     })
 }
+
+function spinPage() {
+    var deg = 0.25;
+    var contentWindow = document.getElementById('content-window');
+    for ( let i = 0; i < 1439; i++ ) {
+        setTimeout( function() {
+            contentWindow.style.transform = `rotate(${deg += 0.25}deg)`
+        }, 1 * i);
+    }
+}

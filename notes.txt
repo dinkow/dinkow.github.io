@@ -5,6 +5,12 @@ Things that need to change when the "web page" is changed
     - address bar
     - content box
 
+    - Refresh will call loadPage(CURRENT PAGE)
+    - Home button will loadPage(search results)
+    - Mail will copy ianmaigler@gmail.com to clipboard?
+    - Print will as if they would like to save a pdf of resume?
+
+
 Mail links to email
 on the "skills" page actually display/demonstrate the skills
     - a list of programming languages i know each written in their respective programming languages
@@ -25,39 +31,3 @@ on the "skills" page actually display/demonstrate the skills
     - soft skills (communicating, teamwork, adaptability)
 
     - streamlining workflow (custom keyboard)
-
-                <!--
-            Javascript
-            Python
-            Java
-            C#
-            C and C++
-            SQL'
-            NoSQL
-            HTML
-            CSS
-            Swift
-            Bash
-
-            
-            !-->
-
-function addTwoNumbers(a, b) {
-    let num1 = a.toString().split('').map(Number);
-    let num2 = b.toString().split('').map(Number);
-    
-    const add = (x, y) => {
-        let carry = 0;
-        let result = [];
-        while (x.length || y.length) {
-            let sum = (x.pop() || 0) + (y.pop() || 0) + carry;
-            carry = sum >= 10 ? 1 : 0;
-            result.unshift(sum % 10);
-        }
-        if (carry) result.unshift(carry);
-        return result;
-    };
-
-    let sum = add(num1, num2).join('');
-    return parseInt(sum);
-}
