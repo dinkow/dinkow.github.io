@@ -5,18 +5,18 @@
     <div style="display: flex; align-items: center; margin: 0 10px 0 10px;"> 
         <img src="../assets/images/Google_1998_logo.png" alt="Google Beta logo" style="width: 25%;">
         <div class="sunken-panel" style="flex-grow: 1;">
-            <p class="search-bar-text">www.google.com</p>
+            <p class="search-bar-text">www.ianmaigler.com</p>
         </div>
-        <select>
+        <select class="hide-mobile">
             <option>10 results</option>
             <option>30 results</option>
             <option>100 results</option>
         </select>
-        <button style="margin: 5px;">Google Search</button>
+        <button class="hide-mobile" style="margin: 5px;">Google Search</button>
         <button style="margin-right: 5px;" onclick="spinPage(); return false;">I'm feeling lucky</button>
     </div>
     <hr class="horizontal-hr" style="margin: 0 10px 0 10px;">
-    <p style="text-align: center; color: #6f6f6f;">Showing results <b>1 - 10</b> of approximately <b>234,000</b> for <b>google.</b> Search took <b>0.06</b> seconds.</p>
+    <p style="text-align: center; color: #6f6f6f;">Showing results <b>1 - 10</b> of approximately <b>234,000</b> for <b>google.</b><span class="hide-mobile"> Search took <b>0.06</b> seconds.</span></p>
 
     <!--SEARCH RESULTS-->
     <div class="search-results">

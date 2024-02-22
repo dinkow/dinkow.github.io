@@ -198,6 +198,12 @@ button:focus {
     flex-grow: 1;
 }
 
+.mobile-workaround {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .top-nav {
     height: 20px;
     background-color: rgb(255, 118, 255);
@@ -310,6 +316,14 @@ input[type=range]::-webkit-slider-runnable-track {
     display: flex;
 }
 
+.interests {
+    width: 38%;
+}
+
+.about-me {
+    width: 62%;
+}
+
 /*resume.html*/
 .display-vertical {
     display: flex;
@@ -342,6 +356,10 @@ input[type=range]::-webkit-slider-runnable-track {
 .title {
     display: flex;
     justify-content: space-between;
+}
+
+.hide {
+    display: none;
 }
 
 /*work-experience.html*/
@@ -997,6 +1015,12 @@ menu[role=tablist] > li {
     padding: 10px;
 }
 
+#problem-solving-code {
+    width: 55%;
+    height: 100%;
+    overflow: auto;
+}
+
 .show-code {
     cursor: pointer;
 }
@@ -1034,11 +1058,95 @@ menu[role=tablist] > li {
     body {
 
     }
+
+    .hide-mobile {
+        display: none;
+    }
+
+    .show-mobile {
+        display: flex;
+    }
+
+    .max-header-width {
+        padding: 0 3px;
+    }
+
+    .mobile-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-width {
+        width: 100%;
+    }
+
+    .interests {
+        order: 1;
+    }
+
+    .header-text {
+        font-size: 1.75em;
+    }
+
+    .work-skills {
+        flex-direction: column;
+    }
+
+    .work-skill {
+        width: 100%;
+        margin: 1px 0;
+    }
+
+    .work-experience-content {
+        width: 100%;
+    }
+
+    .skill {
+        flex-direction: column;
+    }
+
+    .skills-left {
+        width: 90%;
+    }
+
+    .skills-right {
+        width: 100%;
+    }
+
+    .languages-mobile {
+        transform: translate(-140px, 134px) rotate(90deg);
+        width: 560px;
+    }
+
+    .backend-text {
+        width: 90%;
+    }
+
+    .backend-code {
+        overflow: auto;
+        width: 100%;
+    }
+
+    .backend-code-mobile {
+        width: 108%;
+    }
+
+    .problem-solving-text {
+        width: 90%;
+    }
+
+    #problem-solving-code {
+        width: 100%;
+    }
 }
 
   /* Mobile styles */
 @media (max-width: 767px) {
     body {
         zoom: 100%
+    }
+
+    .display-phone {
+        display: flex;
     }
 }

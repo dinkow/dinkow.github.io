@@ -4,7 +4,7 @@
     <div class="profile-header">
         <div class="max-header-width" style="padding: 0 4px;">
             <span>MyPlace.com | Home</span>
-            <div class="display-flex" style="align-items: center;">
+            <div class="display-flex hide-mobile display-phone" style="align-items: center;">
                 <span>Search MyPlace:</span>
                 <div class="sunken-panel" style="height: 20px; width: 100px; margin: 0 3px 0 3px;"></div>
                 <button style="all: revert; font: inherit;">Go</button>
@@ -32,25 +32,27 @@
             <span>Favorites</span>
             <hr>
             <span>Forum</span>
-            <hr>
-            <span>Groups</span>
-            <hr>
-            <span>Events</span>
-            <hr>
-            <span>Videos</span>
-            <hr>
-            <span>Music</span>
-            <hr>
-            <span>Comedy</span>
-            <hr>
-            <span>Classifieds</span>
+            <div class="mobile-workaround hide-mobile">
+                <hr>
+                <span>Groups</span>
+                <hr>
+                <span>Events</span>
+                <hr>
+                <span>Videos</span>
+                <hr>
+                <span>Music</span>
+                <hr>
+                <span>Comedy</span>
+                <hr>
+                <span>Classifieds</span>
+            </div>
         </div>
     </div>
 
     <div class="max-window-width">
 
         <div class="center-profile">
-            <div class="display-flex" style="justify-content: space-between;">
+            <div class="display-flex mobile-column" style="justify-content: space-between;">
                 <div class="profile-border display-flex" style="flex-grow: 1;">
                     <img class="profile-photo" src="../assets/images/head-shot.jpg">
                     <div class="profile-description">
@@ -82,9 +84,9 @@
                     </div>
                 </div>
             </div>
-            <div class="display-flex">
-                <div style="width: 38%;">
-                    <div class="profile-border display-flex" style="padding: 5px;">
+            <div class="display-flex mobile-column">
+                <div class="interests mobile-width">
+                    <div class="profile-border display-flex hide-mobile" style="padding: 5px;">
                         <div class="contact-info">
                             <div><img src="../assets/images/ian-maigler/send-message.png" style="image-rendering: pixelated;"> Send Message</div>
                             <div><img src="../assets/images/ian-maigler/add-friends.png" style="image-rendering: pixelated;"> Add to Friends</div>
@@ -139,7 +141,7 @@
                         </ul>
                     </div>
                 </div>
-                <div style="width: 62%;">
+                <div class="about-me mobile-width">
                     <div class="profile-border" style="padding: 10px;">
                         <h4>About Me!</h4>
                         <p>
