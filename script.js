@@ -248,6 +248,10 @@ function ramPopUp() {
 
         var closeButton = document.createElement('button');
         closeButton.setAttribute('aria-label', 'Close');
+        closeButton.addEventListener('click', function() {
+            ramPopUp();
+            this.parentElement.parentElement.parentElement.remove()
+        });
 
         titleBar.appendChild(titleBarText);
         titleBar.appendChild(titleBarControls);
