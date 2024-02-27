@@ -1,0 +1,36 @@
+Ian Maigler
+
+Victoria, BC V8Z 2K9
+(250) 661 – 2256
+ianmaigler@gmail.com
+
+SKILLS
+- Full-Stack Development
+- Version Control / Git
+- Database Management
+- Problem Solving & Debugging
+- Server-Side Technologies
+-Sprint Planning
+
+EXPERIENCE
+Full Stack Developer
+Three Trees Technical	May 2023 - Aug 2023
+- Performed analysis, design, coding, testing, implementation.
+- Developed and maintained web applications using the MEAN stack, comprising MongoDB, Express.js, Angular, and Node.js, to create responsive and efficient solutions.
+- Worked effectively within Agile software development life cycle, including sprint planning, sprints, and sprint review.
+
+Freelance Web Developer
+robertomaiglerroofing.ca	Dec 2022 - Jan 2023
+- Designed and implemented a dynamic, user-friendly website from scratch using JavaScript and React, demonstrating knowledge in front-end and back-end development, including responsive design and cross-browser compatibility.
+- Created custom React components and implemented state management to ensure seamless user interactions.
+- Improved website performance by optimizing code, reducing load times, and implementing best practices for web development.
+
+Tech Specialist
+London Drugs	Jun 2023 - Oct 2023
+- Provided technical assistance to customers in selecting and troubleshooting electronic products.
+- Managed and maintained inventory levels for tech products, optimizing stock availability and assisting with inventory audits to minimize discrepancies.
+- Collaborated with team members to achieve sales targets, participated in product knowledge training, and assisted in visual merchandising to enhance the customer shopping experience.
+
+EDUCATION
+Information & Computer Systems Technology (Diploma) - Computer Science	Sep 2021 - Sep 2023
+Camosun College, Victoria, British Columbia

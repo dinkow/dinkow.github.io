@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    loadPage('./web-pages/search-results.html', 'Microsoft Internet Explorer', false, false, 'http://www.google.com?hl=en');
+    loadPage('./web-pages/download-ram.html', 'Microsoft Internet Explorer', false, false, 'http://www.google.com?hl=en');
 });
 
 function loadNewHTML(href) {
@@ -219,5 +219,81 @@ function spinPage() {
         setTimeout( function() {
             contentWindow.style.transform = `rotate(${deg += 0.25}deg)`
         }, 1 * i);
+    }
+}
+
+function ramPopUp() {
+    var parentElement = document.getElementById('ram-parent');
+    var existingPositions = [];
+
+    for (let i = 0; i < 2; i++) {
+        var popup = document.createElement('div');
+        popup.className = 'window popup';
+
+        var titleBar = document.createElement('div');
+        titleBar.className = 'title-bar';
+
+        var titleBarText = document.createElement('div');
+        titleBarText.className = 'title-bar-text';
+        titleBarText.textContent = 'A Window With Stuff In It';
+
+        var titleBarControls = document.createElement('div');
+        titleBarControls.className = 'title-bar-controls';
+
+        var minimizeButton = document.createElement('button');
+        minimizeButton.setAttribute('aria-label', 'Minimize');
+
+        var maximizeButton = document.createElement('button');
+        maximizeButton.setAttribute('aria-label', 'Maximize');
+
+        var closeButton = document.createElement('button');
+        closeButton.setAttribute('aria-label', 'Close');
+
+        titleBar.appendChild(titleBarText);
+        titleBar.appendChild(titleBarControls);
+        titleBarControls.appendChild(minimizeButton);
+        titleBarControls.appendChild(maximizeButton);
+        titleBarControls.appendChild(closeButton);
+
+        var windowBody = document.createElement('div');
+        windowBody.className = 'window-body';
+
+        var bodyContent = document.createElement('p');
+        bodyContent.textContent = "There's so much room for activities!";
+
+        windowBody.appendChild(bodyContent);
+
+        popup.appendChild(titleBar);
+        popup.appendChild(windowBody);
+
+        // calculate and set position to avoid overlap
+        var position = getRandomPosition(parentElement.offsetWidth - 306, parentElement.offsetHeight - 168);
+        while (isOverlapping(position, existingPositions)) {
+            position = getRandomPosition(parentElement.offsetWidth - 306, parentElement.offsetHeight - 168);
+        }
+        existingPositions.push(position);
+
+        popup.style.transform = `translate(${position.x}px, ${position.y}px)`;
+        parentElement.appendChild(popup);
+    }
+
+    function getRandomPosition(maxWidth, maxHeight) {
+        return {
+            x: Math.floor(Math.random() * maxWidth),
+            y: Math.floor(Math.random() * maxHeight)
+        };
+    }
+
+    function isOverlapping(newPosition, existingPositions) {
+        for (let i = 0; i < existingPositions.length; i++) {
+            let existingPosition = existingPositions[i];
+            let dx = newPosition.x - existingPosition.x;
+            let dy = newPosition.y - existingPosition.y;
+            let distance = Math.sqrt(dx * dx + dy * dy);
+            if (distance < 310) {
+                return true;
+            }
+        }
+        return false;
     }
 }
