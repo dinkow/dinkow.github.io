@@ -259,15 +259,19 @@ function ramPopUp() {
     var existingPositions = [];
 
     for (let i = 0; i < 2; i++) {
+        var randomAd = Math.floor(Math.random() * 5);
+
         var popup = document.createElement('div');
         popup.className = 'window popup';
+
+        popup.style.visibility = "hidden";
+        parentElement.appendChild(popup);
 
         var titleBar = document.createElement('div');
         titleBar.className = 'title-bar';
 
         var titleBarText = document.createElement('div');
         titleBarText.className = 'title-bar-text';
-        titleBarText.textContent = 'A Window With Stuff In It';
 
         var titleBarControls = document.createElement('div');
         titleBarControls.className = 'title-bar-controls';
@@ -294,23 +298,64 @@ function ramPopUp() {
         var windowBody = document.createElement('div');
         windowBody.className = 'window-body';
 
-        var bodyContent = document.createElement('p');
-        bodyContent.textContent = "There's so much room for activities!";
+        var bodyContent = document.createElement('img');
+        switch(randomAd) {
+            case 0:
+                titleBarText.textContent = 'FREE TEETH';
+                bodyContent.src = "../assets/images/free-ram/free-teeth.gif";
+                break;
+            case 1:
+                titleBarText.textContent = 'SNAKE OIL - bogo';
+                bodyContent.src = "../assets/images/free-ram/snake-oil.gif";
+                break;
+            case 2:
+                titleBarText.textContent = 'FIREWORKS';
+                bodyContent.src = "../assets/images/free-ram/fireworks.gif";
+                break;
+            case 3:
+                titleBarText.textContent = 'SUN light';
+                popup.style = "width: 130px"
+                bodyContent.src = "../assets/images/free-ram/sunlight.png";
+                break;
+            default:
+                titleBarText.textContent = 'LAWYERS IN YOUR AREA';
+                bodyContent.src = "../assets/images/free-ram/lawyer.gif";
+        }
 
         windowBody.appendChild(bodyContent);
-
         popup.appendChild(titleBar);
         popup.appendChild(windowBody);
 
-        // calculate and set position to avoid overlap
-        var position = getRandomPosition(parentElement.offsetWidth - 306, parentElement.offsetHeight - 168);
-        while (isOverlapping(position, existingPositions)) {
-            position = getRandomPosition(parentElement.offsetWidth - 306, parentElement.offsetHeight - 168);
-        }
-        existingPositions.push(position);
+        waitForImagesToLoad(popup).then(([popup, popupWidth, popupHeight]) => {
+            // calculate and set position to avoid overlap
+            var position = getRandomPosition(parentElement.offsetWidth - popupWidth, parentElement.offsetHeight - popupHeight);
+            while (isOverlapping(position, existingPositions, popupWidth, popupHeight)) {
+                position = getRandomPosition(parentElement.offsetWidth - popupWidth, parentElement.offsetHeight - popupHeight);
+            }
+            existingPositions.push(position);
 
-        popup.style.transform = `translate(${position.x}px, ${position.y}px)`;
-        parentElement.appendChild(popup);
+            popup.style.transform = `translate(${position.x}px, ${position.y}px)`;
+            popup.style.visibility = "visible";
+        });
+    }
+
+    function waitForImagesToLoad(element) {
+        return new Promise(resolve => {
+            const images = element.getElementsByTagName('img');
+            if (images.length === 0) {
+                resolve([element, element.offsetWidth, element.offsetHeight]);
+            } else {
+                let loadedImages = 0;
+                for (let i = 0; i < images.length; i++) {
+                    images[i].onload = () => {
+                        loadedImages++;
+                        if (loadedImages === images.length) {
+                            resolve([element, element.offsetWidth, element.offsetHeight]);
+                        }
+                    };
+                }
+            }
+        });
     }
 
     function getRandomPosition(maxWidth, maxHeight) {
@@ -320,13 +365,13 @@ function ramPopUp() {
         };
     }
 
-    function isOverlapping(newPosition, existingPositions) {
+    function isOverlapping(newPosition, existingPositions, popupWidth, popupHeight) {
         for (let i = 0; i < existingPositions.length; i++) {
             let existingPosition = existingPositions[i];
             let dx = newPosition.x - existingPosition.x;
             let dy = newPosition.y - existingPosition.y;
             let distance = Math.sqrt(dx * dx + dy * dy);
-            if (distance < 310) {
+            if (distance < popupWidth || distance < popupHeight) {
                 return true;
             }
         }

@@ -500,6 +500,7 @@ input[type=range]::-webkit-slider-runnable-track {
     flex-direction: column;
     width: 100%;
     background-image: url('./assets/images/education/pattern-blue.jpg');
+    background-attachment: fixed;
     background-repeat: repeat;
     background-size: 128px;
 }
@@ -538,9 +539,14 @@ input[type=range]::-webkit-slider-runnable-track {
     image-rendering: pixelated;
 }
 
-.content-header {
+.education-nav {
     display: flex;
-    margin: 2px 4px 0 auto;
+    position: fixed;
+    width: calc(100% - 26px);
+    background-color: #ff1ea0;
+    z-index: 10;
+
+    height: 20px;
 }
 
 .diploma-results-text {
@@ -648,7 +654,7 @@ input[type=range]::-webkit-slider-runnable-track {
     width: calc(33.33% - 10px);
     height: 20px;
     border: 1px solid blue;
-    background-color: rgb(255, 30, 160);
+    background-color: #ff1ea0;
     margin-bottom: 5px;
     padding-left: 5px;
     align-items: center;
@@ -1100,7 +1106,15 @@ menu[role=tablist] > li {
 .popup {
     position: absolute;
     width: 300px;
-    height: 150px;
+}
+
+.popup .window-body {
+    margin: 0;
+}
+
+.popup img {
+    display: block;
+    width: 100%;
 }
 
 /* MOBILE STYLING */
