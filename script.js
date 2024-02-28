@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    loadPage('./web-pages/download-ram.html', 'Microsoft Internet Explorer', false, false, 'http://www.google.com?hl=en');
+    loadPage('./web-pages/search-results.html', 'Microsoft Internet Explorer', false, false, 'http://www.google.com?hl=en');
 });
 
 function loadNewHTML(href) {
@@ -201,15 +201,47 @@ function toggleDisplay(elementId) {
 }
 
 function skillsAndExpertise() {
-    const regexExample = document.getElementById('regex-input');
+    const regexForm = document.getElementById('regex');
+    const regexName = document.getElementById('name-regex-input');
+    const regexAddress = document.getElementById('address-regex-input');
+    const regexPhone = document.getElementById('phone-regex-input');
+    const regexEmail = document.getElementById('email-regex-input');
 
-    regexExample.addEventListener('input', function() {
+    regexForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+    });
+
+    regexName.addEventListener('input', function() {
         if (/^[A-Za-z]+(?:[ '-][A-Za-z]+)*$/.test(this.value)) {
             this.style.border = '1px solid green'
         } else {
             this.style.border = '1px solid red'
         }
-    })
+    });
+
+    regexAddress.addEventListener('input', function() {
+        if (/^\d+\s[A-Za-z]+\s[A-Za-z]+$/.test(this.value)) {
+            this.style.border = '1px solid green'
+        } else {
+            this.style.border = '1px solid red'
+        }
+    });
+
+    regexPhone.addEventListener('input', function() {
+        if (/^\(?\d{3}\)?[\s-]?\d{3}[\s-]?\d{4}$/.test(this.value)) {
+            this.style.border = '1px solid green'
+        } else {
+            this.style.border = '1px solid red'
+        }
+    });
+
+    regexEmail.addEventListener('input', function() {
+        if (/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(this.value)) {
+            this.style.border = '1px solid green'
+        } else {
+            this.style.border = '1px solid red'
+        }
+    });
 }
 
 function spinPage() {

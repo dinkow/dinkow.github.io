@@ -13,6 +13,11 @@
     src: url('./assets/fonts/Quicksand_Book.otf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Hieroglyphs';
+    src: url('./assets/fonts/AncientEgyptianHieroglyphs.otf') format('truetype');
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -492,13 +497,17 @@ input[type=range]::-webkit-slider-runnable-track {
 
 .education-background {
     display: flex;
+    flex-direction: column;
     width: 100%;
+    background-image: url('./assets/images/education/pattern-blue.jpg');
+    background-repeat: repeat;
+    background-size: 128px;
 }
 
 .quarter-left-div {
     display: flex;
     flex-direction: column;
-    width: 40vw;
+    width: 180px;
     height: 100%;
     border-right: 5px solid;
     border-image-source: url('./assets/images/education/custom-border-100px.jpg');
@@ -514,6 +523,7 @@ input[type=range]::-webkit-slider-runnable-track {
     background-repeat: repeat;
     background-size: 128px;
     width: 100%;
+    height: 183px;
 }
 
 .checker-div {
@@ -529,6 +539,7 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 .content-header {
+    display: flex;
     margin: 2px 4px 0 auto;
 }
 
@@ -540,21 +551,19 @@ input[type=range]::-webkit-slider-runnable-track {
 
 .diploma-header {
     color: blue;
-    font-size: 1.4vw;
+    font-size: 1.68em;
 }
 
 .education-content {
-    background-image: url('./assets/images/education/pattern-blue.jpg');
-    background-repeat: repeat;
-    background-size: 128px;
     display: flex;
     flex-direction: column;
+    margin: auto;
+    max-width: 672px;
 }
 
 .content-padding {
     display: flex;
     flex-direction: column;
-    padding: 5% 10% 5% 10%;
 }
 
 .education-border {
@@ -570,7 +579,7 @@ input[type=range]::-webkit-slider-runnable-track {
 .diploma-photo {
     display: flex;
     margin: 10px;
-    width: 65%;
+    width: 47%;
     position: relative;
     box-shadow: 2px 2px 5px;
 }
@@ -617,14 +626,38 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 .money-symbol {
-    font-size: 2vw;
+    font-size: 1.4em;
     position: absolute;
-    transform: translate(-30%, -20%);;
+    transform: translate(-30%, -24%);;
 }
 
 .stat-header {
     font-family: 'PixCon';
-    font-size: 1.5vw;
+    font-size: 1.6em;
+}
+
+.campus-description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.des-box {
+    display: flex;
+    width: calc(33.33% - 10px);
+    height: 20px;
+    border: 1px solid blue;
+    background-color: rgb(255, 30, 160);
+    margin-bottom: 5px;
+    padding-left: 5px;
+    align-items: center;
+}
+
+.divider-line {
+    background-color: blue;
+    width: 100%;
+    height: 1px;
 }
 
 /* skills-and-expertise.html */
@@ -1043,6 +1076,11 @@ menu[role=tablist] > li {
     grid-column: 1 / 8;
 }
 
+#regex {
+    display: flex;
+    flex-direction: column;
+    width: 140px;
+}
 
 /* FREE RAM */
 
@@ -1162,5 +1200,9 @@ menu[role=tablist] > li {
 
     .display-phone {
         display: flex;
+    }
+
+    .des-box {
+        width: calc(50% - 10px);
     }
 }
