@@ -175,9 +175,47 @@ button:focus {
     margin: 0 40px 0 40px;
 }
 
+.google-nav {
+    max-width: 350px;
+    margin: auto;
+}
+
+.page-results tbody tr * {
+    padding: 0;
+}
+
+.page-results tbody tr td span {
+    margin-left: 6px;
+}
+
+.page-results tbody tr td img {
+    margin-bottom: 5px;
+}
+
+.bottom-search {
+    display: flex;
+    padding: 15px 0px 5px 0px;
+}
+
+.bottom-search .sunken-panel {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    height: 20px;
+    padding: 0px 5px;
+}
+
+.search-copyright {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px 5px 0px;
+}
+
+
 /*ian-maigler.html*/
 .ian-maigler-body {
     background-image: url('./assets/images/tile-stars.gif');
+    background-attachment: fixed;
     background-repeat: repeat;
     background-size: 128px;
 }
@@ -189,7 +227,7 @@ button:focus {
 
 .profile-header {
     height: 25px;
-    background-color: fuchsia;
+    background-color: royalblue;
     display: flex;
     align-items: center;
 }
@@ -211,7 +249,7 @@ button:focus {
 
 .top-nav {
     height: 20px;
-    background-color: rgb(255, 118, 255);
+    background-color: rgb(103, 136, 232);
     display: flex;
     align-items: center;
 }
@@ -224,9 +262,9 @@ button:focus {
 .profile-border {
     border-style: groove;
     border-width: 6px;
-    border-color: fuchsia;
+    border-color: royalblue;
     margin: 10px;
-    background-color: rgb(255, 0, 255, 0.4);
+    background-color: rgb(65, 105, 255, 0.4);
 }
 
 .audio-controls-container {
@@ -299,7 +337,22 @@ input[type=range]::-webkit-slider-runnable-track {
 
 .contact-info {
     display: grid;
-    grid-template-columns: 22px auto 22px auto;
+    grid-template-columns: 22px auto;
+}
+
+.contact-info div {
+    margin: 2px;
+}
+
+.ci-img {
+    display: flex;
+    justify-content: center;
+}
+
+.ci-img img {
+    max-width: 100%;
+    height: auto;
+    image-rendering: pixelated;
 }
 
 .music-list-container {
