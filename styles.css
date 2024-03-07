@@ -18,6 +18,11 @@
     src: url('./assets/fonts/AncientEgyptianHieroglyphs.otf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Origami Mommy';
+    src: url('./assets/fonts/origami-mommy.regular.ttf') format('truetype');
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -264,7 +269,7 @@ button:focus {
     border-width: 6px;
     border-color: royalblue;
     margin: 10px;
-    background-color: rgb(65, 105, 255, 0.4);
+    background-color: rgba(80, 145, 232, 0.66);
 }
 
 .audio-controls-container {
@@ -558,48 +563,89 @@ input[type=range]::-webkit-slider-runnable-track {
     background-size: 128px;
 }
 
-.quarter-left-div {
+.education-nav {
     display: flex;
     flex-direction: column;
-    width: 180px;
-    height: 100%;
-    border-right: 5px solid;
-    border-image-source: url('./assets/images/education/custom-border-100px.jpg');
-    border-image-slice: 5;
-    image-rendering: pixelated;
+    position: fixed;
+    width: calc(100% - 26px);
+    z-index: 10;
+
+    top: 0;
+    transition: top 0.3s ease;
 }
 
-.logo-box {
+.ed-nav-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.ed-nav-logo {
+    color: blue;
+    text-shadow: 1px 1px white;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.ed-nav-text {
+    display: flex;
+    align-items: center;
+    color: blue;
+    text-shadow: 0.25px 0.25px white;
+}
+
+.ed-nav-text span {
+    margin: 0px 5px;
+}
+
+.ed-nav-bottom {
+    display: flex;
+    padding: 3px 10px;
+    font-size: 10px;
+}
+
+.ed-nav-bottom > div {
+    margin-right: 5px;
+}
+
+.search-location {
+    display: flex;
+    align-items: center;
+    border: 1px solid blue;
+    background-color: white;
+    border-radius: 3px;
+    padding: 2px;
+}
+
+.search-query {
+    display: flex;
+    align-items: center;
+    background-color: rgb(220, 220, 220);
+    border-radius: 3px;
+    padding: 2px;
+}
+
+.x-button {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('./assets/images/education/pattern-purple.jpg');
-    background-repeat: repeat;
-    background-size: 128px;
-    width: 100%;
-    height: 183px;
+    background-color: black;
+    border-radius: 50%;
+    height: 9px;
+    width: 9px;
 }
 
-.checker-div {
-    background-image: url('./assets/images/education/checker-pattern.jpg');
-    background-repeat: repeat;
-    background-size: 100px;
-    width: 100%;
-    height: 100vh;
-    border-top: 5px solid;
-    border-image-source: url('./assets/images/education/custom-border-100px.jpg');
-    border-image-slice: 5;
-    image-rendering: pixelated;
-}
-
-.education-nav {
+.nav-drop-down {
     display: flex;
-    position: fixed;
-    width: calc(100% - 26px);
-    background-color: #ff1ea0;
-    z-index: 10;
+    align-items: center;
+    border: 1px solid blue;
+    background-color: white;
+    border-radius: 3px;
+    padding: 2px 5px;
+}
 
-    height: 20px;
+.nav-drop-down:hover {
+    background-color: #f0f0f0;
 }
 
 .diploma-results-text {
@@ -616,7 +662,7 @@ input[type=range]::-webkit-slider-runnable-track {
 .education-content {
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin: 61px auto 30px auto;
     max-width: 672px;
 }
 
@@ -1139,6 +1185,58 @@ menu[role=tablist] > li {
     display: flex;
     flex-direction: column;
     width: 140px;
+}
+
+
+/*interests and hobbies*/
+
+.interest-background {
+    background-image: url('./assets/images/interests-and-hobbies/cave-background.png');
+    background-repeat: repeat;
+    background-size: 64px;
+    image-rendering: pixelated;
+}
+
+.interest-header {
+    font-family: 'Origami Mommy';
+    text-align: center;
+    font-size: 1.6vw;
+    margin: 10px;
+}
+
+.interest-container {
+    display: flex;
+    background-image: url('./assets/images/interests-and-hobbies/interest-background.png');
+    color: white;
+    max-width: 340px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.interest-text {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.interest-text h4 {
+    margin: 10px 0px;
+}
+
+.interest-content {
+    display: flex;
+}
+
+.interest-image {
+    display: flex;
+    align-items: center;
+}
+
+.interest-image img {
+    display: block;
+    width: 115px;
+    height: auto;
+    image-rendering: initial;
 }
 
 /* FREE RAM */
