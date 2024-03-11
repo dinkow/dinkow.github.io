@@ -48,6 +48,10 @@ button:focus {
     flex-grow: 1;
 }
 
+.menu-bar > div {
+    position: relative;
+}
+
 .menu-bar-item {
     min-width: 0;
     min-height: 25px;
@@ -77,6 +81,48 @@ button:focus {
 
 .menu-bar-button:active img {
     transform: translateX(1px) translateY(1px);
+}
+
+.button-dropdown {
+    position: absolute;
+    display: none;
+    z-index: 10;
+}
+
+.button-dropdown div:hover {
+    color: white;
+    background-color: rgb(0, 0, 168);
+}
+
+.button-dropdown>div>span {
+    cursor: default;
+    margin: 2px 20px;
+    display: inline-block;
+}
+
+.button-dropdown>div>span>a {
+    color: black;
+    text-decoration: none;
+}
+
+.button-dropdown>div:hover span>a {
+    color: white;
+}
+
+.dsbl-txt {
+    color: rgb(135, 136, 143);
+}
+
+.unln {
+    text-decoration: underline;
+}
+
+.dropdown-break {
+    height: 0px;
+    width: 100%;
+    margin: 2px 0px;
+    border-top: 1px solid #808080;
+    border-bottom: 1px solid #fff;
 }
 
 .middle-button {
@@ -566,12 +612,8 @@ input[type=range]::-webkit-slider-runnable-track {
 .education-nav {
     display: flex;
     flex-direction: column;
-    position: fixed;
-    width: calc(100% - 26px);
-    z-index: 10;
-
+    width: 100%;
     top: 0;
-    transition: top 0.3s ease;
 }
 
 .ed-nav-top {
@@ -662,7 +704,7 @@ input[type=range]::-webkit-slider-runnable-track {
 .education-content {
     display: flex;
     flex-direction: column;
-    margin: 61px auto 30px auto;
+    margin: 15px auto 30px auto;
     max-width: 672px;
 }
 
@@ -1202,11 +1244,18 @@ menu[role=tablist] > li {
     text-align: center;
     font-size: 1.6vw;
     margin: 10px;
+    color: white;
 }
 
 .interest-container {
     display: flex;
-    background-image: url('./assets/images/interests-and-hobbies/interest-background.png');
+    background-color: #281529;
+    border-image-source: url('./assets/images/interests-and-hobbies/interest-border.png');
+    border-image-slice: 32;
+    border-image-width: 64px;
+    border-image-outset: 2px;
+    border-image-repeat: repeat repeat;
+    border-style: solid;
     color: white;
     max-width: 340px;
     padding: 10px;
@@ -1217,6 +1266,7 @@ menu[role=tablist] > li {
     display: flex;
     flex-direction: column;
     margin: 10px;
+    text-shadow: 1px 1px 4px black;
 }
 
 .interest-text h4 {

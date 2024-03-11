@@ -29,12 +29,132 @@
             <div style="display: flex; max-height: 28px;">
                 <fieldset class="menu-bar" style="border-bottom: none; border-right: none; padding: 0;">
                     <div class="vertical-bar" style="margin: 2px 0 2px 2px;"></div>
-                    <button class="menu-bar-button menu-bar-item" style="margin-left: 4px;">File</button>
-                    <button class="menu-bar-button menu-bar-item">Edit</button>
-                    <button class="menu-bar-button menu-bar-item">View</button>
-                    <button class="menu-bar-button menu-bar-item">Favorites</button>
-                    <button class="menu-bar-button menu-bar-item">Tools</button>
-                    <button class="menu-bar-button menu-bar-item">Help</button>
+                    <div style="margin-left: 4px;">
+                        <button id="toolButton" class="menu-bar-button menu-bar-item">File</button>
+                        <div class="window button-dropdown">
+                            <div>
+                                <span class="dsbl-txt"><span class="unln">N</span>ew</span>
+                            </div>
+                            <div>
+                                <span class="dsbl-txt"><span class="unln">O</span>pen...</span>
+                            </div>
+                            <div>
+                                <span class="dsbl-txt">E<span class="unln">d</span>it</span>
+                            </div>
+                            <div>
+                                <span class="dsbl-txt"><span class="unln">S</span>ave</span>
+                            </div>
+                            <div>
+                                <span class="dsbl-txt">Save&nbsp;<span class="unln">A</span>s...</span>
+                            </div>
+                            <div class="dropdown-break"></div>
+                            <div>
+                                <span class="dsbl-txt">Page&nbsp;Set<span class="unln">u</span>p...</span>
+                            </div>
+                            <div>
+                                <span class="dsbl-txt"><span class="unln">P</span>rint...</span>
+                            </div>
+                            <div class="dropdown-break"></div>
+                            <div>
+                                <span class="dsbl-txt">S<span class="unln">e</span>nd</span>
+                            </div>
+                            <div>
+                                <span class="dsbl-txt"><span class="unln">I</span>mport&nbsp;and&nbsp;Export...</span>
+                            </div>
+                            <div class="dropdown-break"></div>
+                            <div>
+                                <span class="dsbl-txt">P<span class="unln">r</span>operties</span>
+                            </div>
+                            <div>
+                                <span class="dsbl-txt"><span class="unln">W</span>ork&nbsp;Offline</span>
+                            </div>
+                            <div>
+                                <span class="dsbl-txt"><span class="unln">C</span>lose</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button id="toolButton" class="menu-bar-button menu-bar-item">Edit</button>
+                        <div class="window button-dropdown">
+                            <div>
+                                <span class="dsbl-txt">Cu<span class="unln">t</span></span>
+                            </div>
+                            <div>
+                                <span class="dsbl-txt"><span class="unln">C</span>opy</span>
+                            </div>
+                            <div>
+                                <span class="dsbl-txt"><span class="unln">P</span>aste</span>
+                            </div>
+                            <div class="dropdown-break"></div>
+                            <div>
+                                <span class="dsbl-txt">Select&nbsp;<span class="unln">A</span>ll</span>
+                            </div>
+                            <div class="dropdown-break"></div>
+                            <div>
+                                <span class="dsbl-txt"><span class="unln">F</span>ind</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button id="toolButton" class="menu-bar-button menu-bar-item">View</button>
+                        <div class="window button-dropdown">
+                            <div>
+                                <span class="dsbl-txt"><span class="unln">T</span>emp</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button id="toolButton" class="menu-bar-button menu-bar-item">Favorites</button>
+                        <div class="window button-dropdown">
+                            <div>
+                                <span class="dsbl-txt"><span class="unln">A</span>dd&nbsp;to&nbsp;Favorites...</span>
+                            </div>
+                            <div>
+                                <span class="dsbl-txt"><span class="unln">O</span>rganize&nbsp;Favorites...</span>
+                            </div>
+                            <div class="dropdown-break"></div>
+                            <div>
+                                <span><a href="https://www.linkedin.com/in/ian-maigler/?originalSubdomain=ca" target="_blank">LinkedIn</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button id="toolButton" class="menu-bar-button menu-bar-item">Tools</button>
+                        <div class="window button-dropdown">
+                            <div>
+                                <span class="dsbl-txt"><span class="unln">M</span>ail&nbsp;and&nbsp;News</span>
+                            </div>
+                            <div>
+                                <span class="dsbl-txt"><span class="unln">S</span>ynchronize...</span>
+                            </div>
+                            <div>
+                                <span class="dsbl-txt">Windows&nbsp;<span class="unln">U</span>pdate</span>
+                            </div>
+                            <div class="dropdown-break"></div>
+                            <div>
+                                <span class="dsbl-txt">Show&nbsp;<span class="unln">R</span>elated&nbsp;Links</span>
+                            </div>
+                            <div class="dropdown-break"></div>
+                            <div>
+                                <span class="dsbl-txt">Internet&nbsp;<span class="unln">O</span>ptions...</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button id="toolButton" class="menu-bar-button menu-bar-item">Help</button>
+                        <div class="window button-dropdown">
+                            <div>
+                                <span class="dsbl-txt">Online&nbsp;<span class="unln">S</span>upport</span>
+                            </div>
+                            <div>
+                                <span class="dsbl-txt">Send&nbsp;Feedbac<span class="unln">k</span></span>
+                            </div>
+                            <div class="dropdown-break"></div>
+                            <div>
+                                <span class="dsbl-txt"><span class="unln">A</span>bout&nbsp;Internet&nbsp;Explorer</span>
+                            </div>
+                        </div>
+                    </div>                
                 </fieldset>
                 <fieldset style="padding: 0; border-bottom: none;">
                     <img src="./assets/images/W98-logo.png" alt="windows 98 logo with black background" style="image-rendering: pixelated;">
@@ -78,7 +198,7 @@
                 </button>
 
                 <!--home button-->
-                <button class="menu-bar-button middle-button middle-button-width stack-content gs">
+                <button class="menu-bar-button middle-button middle-button-width stack-content gs" onclick="loadPage('./web-pages/search-results.html', 'Microsoft Internet Explorer', true, false, 'http://www.google.com?hl=en');">
                     <img src="./assets/images/home.png" style="margin-bottom: 2px;">
                     <span>Home</span>
                 </button>
