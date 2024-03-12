@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
@@ -30,7 +30,7 @@
                 <fieldset class="menu-bar" style="border-bottom: none; border-right: none; padding: 0;">
                     <div class="vertical-bar" style="margin: 2px 0 2px 2px;"></div>
                     <div style="margin-left: 4px;">
-                        <button id="toolButton" class="menu-bar-button menu-bar-item">File</button>
+                        <button class="menu-bar-button menu-bar-item toolButton">File</button>
                         <div class="window button-dropdown">
                             <div>
                                 <span class="dsbl-txt"><span class="unln">N</span>ew</span>
@@ -74,7 +74,7 @@
                         </div>
                     </div>
                     <div>
-                        <button id="toolButton" class="menu-bar-button menu-bar-item">Edit</button>
+                        <button class="menu-bar-button menu-bar-item toolButton">Edit</button>
                         <div class="window button-dropdown">
                             <div>
                                 <span class="dsbl-txt">Cu<span class="unln">t</span></span>
@@ -96,7 +96,7 @@
                         </div>
                     </div>
                     <div>
-                        <button id="toolButton" class="menu-bar-button menu-bar-item">View</button>
+                        <button class="menu-bar-button menu-bar-item toolButton">View</button>
                         <div class="window button-dropdown">
                             <div>
                                 <span class="dsbl-txt"><span class="unln">T</span>emp</span>
@@ -104,7 +104,7 @@
                         </div>
                     </div>
                     <div>
-                        <button id="toolButton" class="menu-bar-button menu-bar-item">Favorites</button>
+                        <button class="menu-bar-button menu-bar-item toolButton">Favorites</button>
                         <div class="window button-dropdown">
                             <div>
                                 <span class="dsbl-txt"><span class="unln">A</span>dd&nbsp;to&nbsp;Favorites...</span>
@@ -119,7 +119,7 @@
                         </div>
                     </div>
                     <div>
-                        <button id="toolButton" class="menu-bar-button menu-bar-item">Tools</button>
+                        <button class="menu-bar-button menu-bar-item toolButton">Tools</button>
                         <div class="window button-dropdown">
                             <div>
                                 <span class="dsbl-txt"><span class="unln">M</span>ail&nbsp;and&nbsp;News</span>
@@ -141,7 +141,7 @@
                         </div>
                     </div>
                     <div>
-                        <button id="toolButton" class="menu-bar-button menu-bar-item">Help</button>
+                        <button class="menu-bar-button menu-bar-item toolButton">Help</button>
                         <div class="window button-dropdown">
                             <div>
                                 <span class="dsbl-txt">Online&nbsp;<span class="unln">S</span>upport</span>
@@ -226,20 +226,51 @@
                 <hr class="vertical-hr hide-mobile">
 
                 <!--mail button-->
-                <button class="menu-bar-button middle-button middle-button-width stack-content gs">
-                    <div>
-                        <img src="./assets/images/mail.png" style="margin: 1px 0 3px 0;">
-                        <img src="./assets/images/arrow-extend.png" style="margin: 0 0 11px 2px;">
+                <div style="position: relative;">
+                    <button class="menu-bar-button middle-button middle-button-width stack-content gs toolButton">
+                        <div>
+                            <img src="./assets/images/mail.png" style="margin: 1px 0 3px 0;">
+                            <img src="./assets/images/arrow-extend.png" style="margin: 0 0 11px 2px;">
+                        </div>
+                        <span>Mail</span>
+                    </button>
+                    <div class="window button-dropdown">
+                        <div>
+                            <span class="dsbl-txt">ianmaigler@g<span class="unln">m</span>ail.com</span>
+                        </div>
+                        <div>
+                            <span class="dsbl-txt">(250)&nbsp;661-2256</span>
+                        </div>
+                        <div class="dropdown-break"></div>
+                        <div onclick="navigator.clipboard.writeText('ianmaigler@gmail.com');">
+                            <span><span class="unln">C</span>opy&nbsp;Email</span>
+                        </div>
+                        <div onclick="navigator.clipboard.writeText('250 661 2256');">
+                            <span>Copy&nbsp;<span class="unln">P</span>hone</span>
+                        </div>
                     </div>
-                    <span>Mail</span>
-                </button>
+                </div>
 
                 <!--print button-->
-                <button class="menu-bar-button middle-button middle-button-width stack-content gs">
-                    <img src="./assets/images/print.png" style="margin: 2px 0 4px 0;">
-                    <span>Print</span>
-                </button>
-
+                <div style="position: relative;">
+                    <button class="menu-bar-button middle-button middle-button-width stack-content gs toolButton">
+                        <img src="./assets/images/print.png" style="margin: 2px 0 4px 0;">
+                        <span>Print</span>
+                    </button>
+                    <div class="window button-dropdown">
+                        <div>
+                            <span class="dsbl-txt">Connect&nbsp;<span class="unln">P</span>rinter</span>
+                        </div>
+                        <div class="dropdown-break"></div>
+                        <div>
+                            <span>
+                                <a href="../assets/resume/IanMaigler-resume.pdf" download>
+                                    <span class="unln">D</span>ownlaod&nbsp;Resume
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
 
             </fieldset>
 

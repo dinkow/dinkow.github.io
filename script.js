@@ -2,12 +2,12 @@ document.addEventListener('DOMContentLoaded', function () {
     loadPage('./web-pages/search-results.html', 'Microsoft Internet Explorer', false, false, 'http://www.google.com?hl=en');
 
     document.addEventListener("click", function(event) {
-        var toolButtons = document.querySelectorAll('#toolButton');
+        var toolButtons = document.querySelectorAll('.toolButton');
 
         toolButtons.forEach(function(button) {
             var dropdown = button.nextElementSibling;
 
-            if (button === event.target) {
+            if (button === event.target || button.contains(event.target)) {
                 dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
             } else if (!dropdown.contains(event.target)) {
                 dropdown.style.display = "none";

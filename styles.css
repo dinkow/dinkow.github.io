@@ -1320,10 +1320,17 @@ menu[role=tablist] > li {
 
 /* MOBILE STYLING */
 
+/* 1080p screen */
+@media (max-width: 1920px) {
+    body {
+        zoom: 150%
+    }
+}
+
 /* Tablet styles */
 @media (max-width: 991px) {
     body {
-
+        zoom: 200%
     }
 
     .hide-mobile {
