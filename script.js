@@ -214,6 +214,44 @@ function toggleDisplay(elementId) {
     }
 }
 
+function checkWidth(entries) {
+    entries.forEach(entry => {
+        if (entry.target.id === 'resizableDiv' && entry.contentRect) {
+            var width = entry.contentRect.width;
+            var left = document.getElementById('left');
+            var mid = document.getElementById('mid');
+            var right = document.getElementById('right');
+
+            if (width > 621) {
+                left.style.width = '15%';
+                mid.style.width = '55%';
+                right.style.width = '20%';
+            } else if (width < 620 && width > 431) {
+                left.style.width = '15%';
+                mid.style.width = '75%';
+                right.style.width = 'calc(100% - 20px)';
+            } else if (width < 430) {
+                left.style.width = 'calc(100% - 20px)';
+                mid.style.width = 'calc(100% - 20px)';
+            }
+        }
+    });
+}
+
+function responsiveDesign() {
+    var parentHeight = document.getElementById('content-window').getBoundingClientRect().height;
+    var childHeight = document.getElementById('responsive');
+    var resizableDiv = document.getElementById('resizableDiv');
+
+    var newHeight = parentHeight - 80;
+
+    childHeight.style.height = newHeight + 'px';
+
+    var observer = new ResizeObserver(checkWidth);
+
+    observer.observe(resizableDiv);
+}
+
 function skillsAndExpertise() {
     const regexForm = document.getElementById('regex');
     const regexName = document.getElementById('name-regex-input');
