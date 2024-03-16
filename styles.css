@@ -1209,6 +1209,35 @@ menu[role=tablist] > li {
     background-color: #0000001a;
 }
 
+.server {
+    padding: 10px;
+}
+
+.security {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.auth-text {
+    width: 70%;
+}
+
+#authForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#authForm input {
+    margin: 4px;
+    width: 100px;
+}
+
+#authError {
+    display: none;
+    color: red;
+}
+
 .problem-solving {
     display: flex;
 }

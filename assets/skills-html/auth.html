@@ -1,3 +1,21 @@
 <div class="security">
-    have a fake log in (username & password) then write is as plaintext to sql or something
+    <h4 style="margin: 10px 0px;">Auth</h4>
+    <div class="display-flex">
+        <div class="auth-text">
+            <p>
+                One of the topics covered in my Web Services course was authentication and authorization.
+                The labs in the course spent each week building on one "forum" application that each student
+                got to build from scratch. The last few labs covered authentication through adding a sign 
+                in page, and authorization by integrating jwt and user roles.
+            </p>
+        </div>
+        <div>
+            <form id="authForm">
+                <input type="text" name="username" placeholder="username or email" required>
+                <input type="password" name="password" placeholder="password" required>
+                <span id="authError">You are not authorized to<br>perform this operation</span>
+                <input type="submit" value="login">
+            </form>
+        </div>
+    </div>
 </div>

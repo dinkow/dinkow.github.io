@@ -233,6 +233,7 @@ function checkWidth(entries) {
             } else if (width < 430) {
                 left.style.width = 'calc(100% - 20px)';
                 mid.style.width = 'calc(100% - 20px)';
+                right.style.width = 'calc(100% - 20px)';
             }
         }
     });
@@ -250,6 +251,17 @@ function responsiveDesign() {
     var observer = new ResizeObserver(checkWidth);
 
     observer.observe(resizableDiv);
+}
+
+function authExample() {
+    const authForm = document.getElementById('authForm');
+    const authError = document.getElementById('authError');
+
+    authForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        authError.style.display = "inline-block";
+    });
 }
 
 function skillsAndExpertise() {
