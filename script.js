@@ -1,6 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
     loadPage('./web-pages/search-results.html', 'Microsoft Internet Explorer', false, false, 'http://www.google.com?hl=en');
 
+    if (navigator.userAgent.indexOf("Gecko/") != -1) {
+        alert("For the optimal viewing experience on your browser use [CTRL] + [SCROLL WHEEL] to find your proffered level of zoom!");
+    }
+
     document.addEventListener("click", function(event) {
         var toolButtons = document.querySelectorAll('.toolButton');
 
