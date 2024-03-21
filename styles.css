@@ -1446,11 +1446,6 @@ menu[role=tablist] > li {
         width: 100%;
     }
 
-    .languages-mobile {
-        transform: translate(-140px, 134px) rotate(90deg);
-        width: 560px;
-    }
-
     .backend-text {
         width: 90%;
     }
@@ -1485,5 +1480,12 @@ menu[role=tablist] > li {
 
     .des-box {
         width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 700px) {
+    .languages-mobile {
+        transform: translate(-140px, 134px) rotate(90deg);
+        width: 560px;
     }
 }
