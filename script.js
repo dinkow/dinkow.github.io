@@ -395,10 +395,16 @@ function ramPopUp() {
         popup.appendChild(windowBody);
 
         waitForImagesToLoad(popup).then(([popup, popupWidth, popupHeight]) => {
+            var parentWidth = parentElement.offsetWidth;
+            var parentHeight = parentElement.offsetHeight;
+
             // calculate and set position to avoid overlap
-            var position = getRandomPosition(parentElement.offsetWidth - popupWidth, parentElement.offsetHeight - popupHeight);
-            while (isOverlapping(position, existingPositions, popupWidth, popupHeight)) {
-                position = getRandomPosition(parentElement.offsetWidth - popupWidth, parentElement.offsetHeight - popupHeight);
+            var position = getRandomPosition(parentWidth - popupWidth, parentHeight - popupHeight);
+            if ( ( ( popupWidth * 2 ) < parentWidth ) && ( ( popupHeight * 2 ) < parentHeight ) ) {
+                console.log('overlap will run');
+                while (isOverlapping(position, existingPositions, popupWidth, popupHeight)) {
+                    position = getRandomPosition(parentWidth - popupWidth, parentHeight - popupHeight);
+                }
             }
             existingPositions.push(position);
 
