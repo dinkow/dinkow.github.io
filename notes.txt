@@ -31,3 +31,5 @@ on the "skills" page actually display/demonstrate the skills
     - soft skills (communicating, teamwork, adaptability)
 
     - streamlining workflow (custom keyboard)
+
+when a link is clicked (page, back, forward, home) record what the scroll position is. 

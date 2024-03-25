@@ -31,12 +31,13 @@ function loadNewHTML(href) {
         .catch(error => console.error('Error fetching HTML:', error));
 }
 
-function loadPage(html, barText, backButton, forwardButton, webAddressText) {
+function loadPage(html, barText, backButton, forwardButton, webAddressText, scroll = 0) {
     // store current web page
     if (backButton || forwardButton) { // checks if navigation will be needed. if not, there is no reason to store current web page.
         var currentHTML = document.getElementById('current-html').innerText;
         var currentToolBarText = document.getElementById('title-bar-text').innerText;
         var currentWebAddressText = document.getElementById('web-address').innerText;
+        var currentScroll = document.getElementById('content-window').scrollTop;
     };
 
     return loadNewHTML(html)
@@ -48,18 +49,18 @@ function loadPage(html, barText, backButton, forwardButton, webAddressText) {
             // update back button
             if (backButton) {
                 document.getElementById('back-button').onclick = function() {
-                    loadPage(currentHTML, currentToolBarText, false, true, currentWebAddressText);
+                    loadPage(currentHTML, currentToolBarText, false, true, currentWebAddressText, currentScroll);
                 };
             } else {
                 document.getElementById('back-button').onclick = function() {
                     // no functionality
                 };
             }
-            
+
             // update forward button
             if (forwardButton) {
                 document.getElementById('forward-button').onclick = function() {
-                    loadPage(currentHTML, currentToolBarText, true, false, currentWebAddressText);
+                    loadPage(currentHTML, currentToolBarText, true, false, currentWebAddressText, currentScroll);
                 };
             } else {
                 document.getElementById('forward-button').onclick = function() {
@@ -70,6 +71,9 @@ function loadPage(html, barText, backButton, forwardButton, webAddressText) {
             // update address bar url
             var webAddress = document.getElementById('web-address');
             webAddress.textContent = webAddressText;
+
+            // update scroll position
+            document.getElementById('content-window').scrollTop = scroll;
         })
 }
 
@@ -400,8 +404,8 @@ function ramPopUp() {
 
             // calculate and set position to avoid overlap
             var position = getRandomPosition(parentWidth - popupWidth, parentHeight - popupHeight);
-            if ( ( ( popupWidth * 2 ) < parentWidth ) && ( ( popupHeight * 2 ) < parentHeight ) ) {
-                console.log('overlap will run');
+
+            if ( ( ( popupWidth * 2 ) < parentWidth ) && ( ( popupHeight * 2 ) < parentHeight ) ) { // check screen size to avoid infinite loop
                 while (isOverlapping(position, existingPositions, popupWidth, popupHeight)) {
                     position = getRandomPosition(parentWidth - popupWidth, parentHeight - popupHeight);
                 }
