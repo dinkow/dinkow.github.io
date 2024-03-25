@@ -262,6 +262,15 @@ button:focus {
     margin: 10px 0px 5px 0px;
 }
 
+#gecko-popup {
+    position: absolute;
+    display: none;
+    bottom: 31px;
+    right: 26px;
+    width: 250px;
+    z-index: 100;
+}
+
 
 /*ian-maigler.html*/
 .ian-maigler-body {
@@ -1243,13 +1252,13 @@ menu[role=tablist] > li {
 }
 
 .problem-solving-text {
-    width: 45%;
+    width: 40%;
     height: 100%;
     padding: 10px;
 }
 
 #problem-solving-code {
-    width: 55%;
+    width: 60%;
     height: 100%;
     overflow: auto;
 }

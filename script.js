@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
     loadPage('./web-pages/search-results.html', 'Microsoft Internet Explorer', false, false, 'http://www.google.com?hl=en');
 
-    if (navigator.userAgent.indexOf("Gecko/") != -1) {
-        alert("For the optimal viewing experience on your browser use [CTRL] + [SCROLL WHEEL] to find your proffered level of zoom!");
+    if (navigator.userAgent.indexOf("Gecko/") != -1 && !localStorage.getItem('hidePopup')) {
+        document.getElementById('gecko-popup').style.display = 'block';
     }
 
     document.addEventListener("click", function(event) {
@@ -19,6 +19,14 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     })
 });
+
+function closeGeckoPopup() {
+    document.getElementById('gecko-popup').style.display = 'none';
+
+    if (document.getElementById('neverShowAgain').checked) {
+        localStorage.setItem('hidePopup', 'true');
+    }
+}
 
 function loadNewHTML(href) {
     return fetch(href)
@@ -173,7 +181,7 @@ function loadCode(href, iconFile, file) {
 function pingWebsite() {
     const startTime = new Date().getTime();
 
-    fetch('https://dinkow.github.io')
+    fetch('https://ianmaigler.com')
         .then(response => {
             const endTime = new Date().getTime();
             const pingTime = endTime - startTime;

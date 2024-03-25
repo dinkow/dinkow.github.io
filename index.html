@@ -311,6 +311,28 @@
             </div>
         </div>
     </div>
+
+    <div id="gecko-popup" class="window">
+        <div class="title-bar">
+            <div class="title-bar-text">Hey btw!</div>
+            <div class="title-bar-controls">
+                <button onclick="closeGeckoPopup()" aria-label="Close"></button>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; padding: 10px;">
+            <span style="margin-bottom: 10px;">
+                Looks like your browser is using the Gecko rendering engine. No problem!
+                You'll just need to find the optimal level of zoom by yourself. 
+                Use [CTRL] + [SCROLL WHEEL] to find your proffered level of zoom!
+            </span>
+            <input type="checkbox" id="neverShowAgain">
+            <label for="neverShowAgain">  Don't show this again</label>
+            <div style="margin-top: 10px;">
+                <button onclick="closeGeckoPopup()">Ok</button>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
