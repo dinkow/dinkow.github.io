@@ -753,7 +753,7 @@ input[type=range]::-webkit-slider-runnable-track {
     transform: translate(30%, 30%);
     bottom: 0;
     right: 0;
-    height: 23%;
+    height: 30%;
 }
 
 .listing-photos {
