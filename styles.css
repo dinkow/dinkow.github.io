@@ -735,7 +735,7 @@ input[type=range]::-webkit-slider-runnable-track {
 .diploma-photo {
     display: flex;
     margin: 10px;
-    width: 47%;
+    width: 53%;
     position: relative;
     box-shadow: 2px 2px 5px;
 }
