@@ -3,6 +3,7 @@ Ian Maigler
 Victoria, BC V8Z 2K9
 (250) 661 – 2256
 ianmaigler@gmail.com
+ianmaigler.com
 
 SKILLS
 - Full-Stack Development
@@ -10,9 +11,15 @@ SKILLS
 - Database Management
 - Problem Solving & Debugging
 - Server-Side Technologies
--Sprint Planning
+- Sprint Planning
 
 EXPERIENCE
+Software Developer
+Charter Telecom   May 2024 - Sep 2025
+- Developed full-stack applications using Quasar/Vue frontend and Express/Node.js backend, building reusable components and scalable APIs.
+- Integrated with a variety of Cisco APIs (Webex Contact Center GraphQL, RoomOS, and related services) as well as Microsoft Graph, delivering real-time dashboards, device automation, and collaboration tools.
+- Managed cloud-based application infrastructure in AWS ECS, including containerized task execution, environment management, and deployment troubleshooting.
+
 Full Stack Developer
 Three Trees Technical	May 2023 - Aug 2023
 - Performed analysis, design, coding, testing, implementation.
@@ -24,12 +31,6 @@ robertomaiglerroofing.ca	Dec 2022 - Jan 2023
 - Designed and implemented a dynamic, user-friendly website from scratch using JavaScript and React, demonstrating knowledge in front-end and back-end development, including responsive design and cross-browser compatibility.
 - Created custom React components and implemented state management to ensure seamless user interactions.
 - Improved website performance by optimizing code, reducing load times, and implementing best practices for web development.
-
-Tech Specialist
-London Drugs	Jun 2023 - Oct 2023
-- Provided technical assistance to customers in selecting and troubleshooting electronic products.
-- Managed and maintained inventory levels for tech products, optimizing stock availability and assisting with inventory audits to minimize discrepancies.
-- Collaborated with team members to achieve sales targets, participated in product knowledge training, and assisted in visual merchandising to enhance the customer shopping experience.
 
 EDUCATION
 Information & Computer Systems Technology (Diploma) - Computer Science	Sep 2021 - Sep 2023
